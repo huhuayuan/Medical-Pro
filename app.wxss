@@ -12,5 +12,5 @@ page {
   height: 100%;
   width: 100%;
   background: #f4f4f4;
-  font-size: 62.5%;
+  font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
 }
