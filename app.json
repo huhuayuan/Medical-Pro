@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/doctorList/doctorList",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#03a9f4",
+    "backgroundColor": "#fff",
+    "list": [
+        {
+            "pagePath": "pages/doctorList/doctorList",
+            "text": "医生",
+            "iconPath": "images/doctor.png",
+            "selectedIconPath": "images/doctor-selected.png"
+        },
+        {
+            "pagePath": "pages/self/self",
+            "text": "我的",
+            "iconPath": "images/self.png",
+            "selectedIconPath": "images/self-selected.png"
+        }
+    ]
+  }
+}
