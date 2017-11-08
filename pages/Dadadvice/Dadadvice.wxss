@@ -1,0 +1,66 @@
+/* pages/Dadadvice/Dadadvice.wxss */
+page{  
+  display: flex;  
+  flex-direction: column;  
+  height: 100%;
+  font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
+}  
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;  
+  box-shadow: 0 4rpx 6rpx 2rpx rgba(0,0,0,.1);
+  margin-bottom: 24rpx;
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  font-size: 28rpx;
+  padding: 20rpx 0;
+}
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  width: 200rpx;
+  bottom: 0;  
+  left: 50%;  
+  margin-left:-100rpx; 
+  right: 0;  
+  height: 8rpx;  
+  background: #40c0e3;  
+}  
+.context {
+    background-color: #fff;
+    padding: 30rpx;
+    color: #101010;
+    font-size: 28rpx;
+}
+.inputGroup {
+    position: relative;
+    margin-bottom: 10rpx;
+}
+.inputGroup input {
+    border-bottom: 2rpx solid #d2d2d2;
+    padding: 10rpx 30rpx;
+}
+.inputGroup image {
+    width: 52rpx;
+    height: 72rpx;
+    position: absolute;
+    right: 6rpx;
+    top: 0;
+}
+.classInput {
+    border-bottom: 2rpx solid #d2d2d2;
+    padding: 10rpx 30rpx;
+    height: 52rpx;
+}
+.sexTab {
+    float: left;
+    padding: 4rpx 16rpx;
+    border: 2rpx dashed #d2d2d2;
+    border-radius: 8rpx;
+    margin-right: 16rpx;
+}

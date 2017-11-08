@@ -10,6 +10,9 @@
   <view>
     <text bindtap="bindDocumentTap">{{hello}}</text>
   </view>
+  <view>
+    <text bindtap="Doctor">医生版块跳转</text>
+  </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>

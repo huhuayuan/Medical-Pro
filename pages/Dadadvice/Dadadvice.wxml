@@ -1,0 +1,26 @@
+<!--pages/Dadadvice/Dadadvice.wxml-->
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>  
+  
+<!--患者列表-->  
+<view hidden="{{currentTab!==0}}" class='context'>  
+  <form>
+    <view class='inputGroup'>
+        <text>姓名</text>
+        <input name='name' placeholder="请输入姓名"/>
+        <image src="../../images/case.png"></image>
+    </view>
+    <view class='inputGroup'>
+        <text>性别</text>
+        <view class='classInput'>
+            <text wx:for="{{sex}}" class="sexTab">{{item}}</text>
+        </view>
+    </view>
+  </form>
+</view>  
+  
+<!--新建医嘱-->  
+<view hidden="{{currentTab!==1}}" class='context'>  
+  tab_02  
+</view>  

@@ -21,6 +21,11 @@ Page({
       url: '../doctorList/doctorList'
     })
   },
+  Doctor: function(){
+    wx.navigateTo({
+      url: '../Dadadvice/Dadadvice'
+    })
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
