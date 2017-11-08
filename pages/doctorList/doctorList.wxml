@@ -1,23 +1,2 @@
-<view class="list-tmp">
-  <view class="swipper-tab">
-    <view wx:for="{{expandTabs}}" wx:key="{{index}}" class="swiper-tab-list {{currentIdx == index ? 'on' : ''}}" bindtap="swichTab" id="{{index}}">
-      {{item}}
-    </view>
-  </view>
-  <swiper current="{{currentIdx}}" class="swiper-box" bindchange="bindChange">
-    <swiper-item>
-      <view class="searchBox">
-        <view class="searchBar">
-          <icon type="search" size="14" />
-          <input type="text"  placeholder="输入搜索内容" />
-        </view>
-      </view>
-      <view class="doctorList">
-        <text>01</text>
-      </view>
-    </swiper-item>
-    <swiper-item>
-      <text>02</text>
-    </swiper-item>
-  </swiper>
-</view>
+<!--pages/doctorList/doctorList.wxml-->
+<text>pages/doctorList/doctorList.wxml</text>

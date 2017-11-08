@@ -1,22 +1,19 @@
-//doctorList.js 医生列表页面
-//获取应用实例
-var app = getApp()
+// pages/doctorList/doctorList.js
 Page({
-  data: {
-      loading: false,
-      expandTabs: ['医生列表','创建账号'],
-      currentIdx: 0
+  data:{},
+  onLoad:function(options){
+    // 页面初始化 options为页面跳转所带来的参数
   },
-  //切换tab
-  swichTab: function(e){
-    this.setData({
-      currentIdx: e.currentTarget.id
-    })
+  onReady:function(){
+    // 页面渲染完成
   },
-  //滑动切换tab
-  bindChange: function( e ) {
-      this.setData({
-        currentIdx: e.detail.current
-      });
-    }
+  onShow:function(){
+    // 页面显示
+  },
+  onHide:function(){
+    // 页面隐藏
+  },
+  onUnload:function(){
+    // 页面关闭
+  }
 })

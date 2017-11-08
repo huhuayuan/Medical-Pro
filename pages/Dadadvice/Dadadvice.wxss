@@ -32,10 +32,13 @@ page{
   background: #40c0e3;  
 }  
 .context {
-    background-color: #fff;
-    padding: 30rpx;
     color: #101010;
     font-size: 28rpx;
+}
+.basic {
+    background-color: #fff;
+    padding: 30rpx 30rpx 20rpx;
+    margin-bottom: 20rpx;
 }
 .inputGroup {
     position: relative;
@@ -63,4 +66,149 @@ page{
     border: 2rpx dashed #d2d2d2;
     border-radius: 8rpx;
     margin-right: 16rpx;
+}
+.classInput .active {
+    border: 2rpx solid #40c0e3;
+}
+.medicineBill {
+    background-color: #fff;
+    padding: 30rpx 30rpx 20rpx;
+}
+.medicineBill .mark,.medicineBill .mark-s,.medicineBill .mark-c {
+    font-size: 18rpx;
+    border: 2rpx solid #40c0e3;
+    color: #40c0e3;
+    padding: 4rpx 8rpx;
+    border-radius: 8rpx;
+}
+.medicineBill .mark-s {
+    color: #fff;
+    background-color: #40c0e3;
+}
+.medicineBill .mark-c {
+    color: #fff;
+    border: 2rpx solid #88cccc;
+    background-color: #88cccc;
+}
+.medicineChange {
+    font-size: 22rpx;
+    border: 4rpx dashed #d2d2d2;
+    width: 110rpx;
+    height: 36rpx;
+    line-height: 36rpx;
+    text-align: center;
+    border-radius: 8rpx;
+}
+.mc {
+    margin-top: 20rpx;
+    color: #888
+}
+/*search*/
+.search_top {
+    height: 84rpx;
+    background: #fff;
+    padding: 12rpx 40rpx;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 2rpx solid #d2d2d2;
+}
+.search_input {
+    height: 60rpx;
+    border: 2rpx solid #d2d2d2;
+    border-radius: 40rpx;
+    box-sizing: border-box;
+    padding: 0 60rpx;
+    background: #f0f0f0;
+    font-size: 28rpx;
+}
+.search_icon {
+    position: absolute;
+    top: 30rpx;
+    left: 60rpx;
+    z-index: 5
+}
+.searchBtn {
+    background:none;
+    position:absolute;
+    right:40rpx;
+    top:14rpx;
+    bottom:0;
+    width:80rpx;
+    height: 60rpx;
+}
+button::after{
+    border: none;
+}
+.clear {
+    position:absolute;
+    right:20rpx;
+    top:10rpx;
+    z-index:5;
+}
+/*search*/
+.panel {
+    padding: 20rpx 40rpx;
+}
+.cell {
+    display: flex; 
+}
+.p {
+    padding-left:20rpx;
+    font-size:32rpx;
+    line-height: 60rpx;
+}
+/*患者信息*/
+.patient {
+    background: #fff;
+    border-bottom: 2rpx solid #d2d2d2;
+    box-sizing: border-box;
+    padding:40rpx;
+    display: flex; 
+}
+.patientImg {
+    width: 20%;
+    height: 90rpx;
+    border-radius: 54rpx;
+}
+.patientImg image {
+    width: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    border-radius: 54rpx;
+}
+.patientInfo {
+    width: 80%;
+    display: flex;  
+    flex-direction: column;  
+    position: relative;
+}
+.pName {
+    font-size: 28rpx;
+    color:#101010;
+    font-weight: bold;
+}
+.pSex,.pTime {
+    font-size: 22rpx;
+    color: #888;
+    line-height: 50rpx;
+}
+.pAge {
+    position: absolute;
+    top: 20rpx;
+    right: 10rpx;
+    color: #b2b2b2;
+    font-size: 22rpx;
+}
+.Pcase {
+    color: #b2b2b2;
+    line-height: 20rpx;
+    margin-top: 20rpx;
+}
+.Pcase text {
+    font-size: 20rpx;
+    color: #fff;
+    background: #40c0e3;
+    border-radius: 8rpx;
+    padding: 4rpx 8rpx;
+    margin-right: 10rpx;
 }

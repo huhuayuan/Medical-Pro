@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/Dadadvice/Dadadvice",
+    "pages/GdoctorList/GdoctorList",
     "pages/index/index",
     "pages/doctorList/doctorList",
     "pages/logs/logs"
@@ -18,7 +19,7 @@
     "backgroundColor": "#fff",
     "list": [
         {
-            "pagePath": "pages/doctorList/doctorList",
+            "pagePath": "pages/GdoctorList/GdoctorList",
             "text": "医生",
             "iconPath": "images/doctor.png",
             "selectedIconPath": "images/doctor-selected.png"

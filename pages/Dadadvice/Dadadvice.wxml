@@ -5,22 +5,102 @@
   
 <!--患者列表-->  
 <view hidden="{{currentTab!==0}}" class='context'>  
-  <form>
-    <view class='inputGroup'>
-        <text>姓名</text>
-        <input name='name' placeholder="请输入姓名"/>
-        <image src="../../images/case.png"></image>
-    </view>
-    <view class='inputGroup'>
-        <text>性别</text>
-        <view class='classInput'>
-            <text wx:for="{{sex}}" class="sexTab">{{item}}</text>
+  <view class="search_top">
+    <form class="search_form" bindsubmit="searchSubmit">
+      <input value="{{search.searchValue}}" placeholder="输入搜索内容" class="search_input" bindfocus="focusSearch" bindinput="searchActiveChangeinput" auto-focus="true" name="patientSearch" maxlength="20" />
+      <view class="search_icon search_active" style="width:40rpx;">
+        <icon type="search" size="15" color="#888" style="float:left;margin-right:20rpx;"></icon>
+      </view>
+      <button wx:if="{{search.showClearBtn}}" catchtap="searchActiveChangeclear" form-type="reset" class='searchBtn'>
+        <icon type="clear" size="20" color="#aaa" class='clear'></icon>
+      </button>
+    </form>
+  </view>
+
+<view class="panel" wx:if="{{search.showClearBtn}}" catchtap="searchSubmit">
+  <view class="panel__bd">
+    <view class="media-box media-box_small-appmsg">
+      <view class="cells">
+        <view class="a cell cell_access">
+          <view class="cell__hd" style="background-color:#1AAD19;border-radius:7rpx;width:60rpx;height:60rpx;line-height:60rpx;text-align:center;">
+            <icon type="search" size="20" color="#fff" style="margin-top:10rpx;"></icon>
+          </view>
+          <view class="cell__bd cell_primary">
+            <view class="p"><text style="color:#000;">搜索:</text><text style="color:#1AAD19;margin-left:20rpx;">{{search.searchValue}}</text></view>
+          </view>
+          <text class="cell__ft"></text>
         </view>
+      </view>
     </view>
-  </form>
+  </view>
+</view>
+
+  <block wx:for="{{searchResult}}" wx:for-item="item" wx:key="id">
+    <navigator url="info?teamId={{item.team_id}}">
+      <view class='patient'>
+          <view class='patientImg'>
+              <image src="{{item.image}}"></image>
+          </view>
+          <view class='patientInfo'>
+              <text class='pName'>{{item.name}}</text>
+              <text class='pAge'>{{item.age}}</text>
+              <text class='pSex'>{{item.sex}}</text>
+              <text class='pTime'>就诊时间：{{item.time}}</text>
+              <view class='Pcase'>
+                <text>病例</text> {{item.patientCase}}
+              </view>
+          </view>
+      </view>
+    </navigator>
+  </block>
+
 </view>  
   
 <!--新建医嘱-->  
-<view hidden="{{currentTab!==1}}" class='context'>  
-  tab_02  
-</view>  
+  <view hidden="{{currentTab!==1}}" class='context'>  
+    <form name='infromation'>
+      <view class='basic'>
+        <view class='inputGroup'>
+          <text>姓名</text>
+          <input name='name' placeholder="请输入姓名"/>
+          <image src="../../images/case.png"></image>
+        </view>
+        <view class='inputGroup'>
+          <text>性别</text>
+          <view class='classInput'>
+          <text wx:for="{{sex}}"  wx:key="unique" data-sex="{{index}}" class="sexTab {{sexTab==index ? 'active' : ''}}" bindtap='sexTap'>{{item}}</text>
+        </view>
+        </view>
+        <view class='inputGroup'>
+          <text>年龄</text>
+          <input name='age' placeholder="请输入年龄"/>
+        </view>
+        <view class='inputGroup'>
+          <text>手机号</text>
+          <input name='iphone' placeholder="请输入手机号"/>
+        </view>
+      </view>
+
+      <view class='medicineBill'>
+        <view class='inputGroup'>
+          <text class='mark'>处方号</text>
+          <input name='prescriptionNumber' placeholder=""/>
+          <image src="../../images/case.png"></image>
+        </view>
+        <view class='inputGroup'>
+          <text class='mark-s'>简述</text>
+          <input name='brief' placeholder=""/>
+        </view>
+        <view class='inputGroup'>
+          <text class='mark'>详情</text>
+          <input name='particulars' placeholder=""/>
+        </view>
+        <view class='inputGroup'>
+          <text class='mark-c'>处方</text>
+          <view class='classInput mc'>
+            <view class='medicineChange'>选择药品</view>
+          </view>
+        </view>
+      </view>
+    </form>
+  </view>  
