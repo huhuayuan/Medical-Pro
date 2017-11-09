@@ -5,7 +5,58 @@ Page({
   data: {
       loading: false,
       expandTabs: ['医生列表','创建账号'],
-      currentIdx: 0
+      currentIdx: 0,
+      sex : ['男','女'],
+      sexTab : null,
+      doctorLists: [
+        {
+          name:'张某某',
+          hospital:'北京协议医院',
+          department:'内科',
+          time:'2017年6月6日',
+          num:'001568',
+          image: '../../images/doctor.png',
+          age: 36
+        },{
+          name:'张某某',
+          hospital:'北京协议医院',
+          department:'内科',
+          time:'2017年6月6日',
+          num:'001568',
+          image: '../../images/doctor.png',
+          age: 36
+        },{
+          name:'张某某',
+          hospital:'北京协议医院',
+          department:'内科',
+          time:'2017年6月6日',
+          num:'001568',
+          image: '../../images/doctor.png',
+          age: 36
+        },{
+          name:'张某某',
+          hospital:'北京协议医院',
+          department:'内科',
+          time:'2017年6月6日',
+          num:'001568',
+          image: '../../images/doctor.png',
+          age: 36
+        },{
+          name:'张某某',
+          hospital:'北京协议医院',
+          department:'内科',
+          time:'2017年6月6日',
+          num:'001568',
+          image: '../../images/doctor.png',
+          age: 36
+        }
+      ],
+      phoneInfo: app.globalData.phoneInfo,
+  },
+  sexTap: function(e){
+    this.setData({
+      sexTab: e.currentTarget.dataset.sex
+    })
   },
   //切换tab
   swichTab: function(e){

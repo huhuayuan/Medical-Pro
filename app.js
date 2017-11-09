@@ -32,6 +32,8 @@ App({
     //     }
     //   }
     // })
+    var that = this;
+    that.globalData.phoneInfo = wx.getSystemInfoSync()
   },
   globalData: {
     userInfo: null,
