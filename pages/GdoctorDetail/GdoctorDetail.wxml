@@ -1,0 +1,48 @@
+<view class="doctorPanel">
+  <view class="doctorHeader">
+    医生信息
+  </view>
+  <view class="doctorInfo Dpanel">
+    <view class="doctorAvatar">
+      <image class='avatar' src='{{doctorInfo.image}}'></image>
+    </view>
+    <view class="doctorName">
+      <text class="Dname">{{doctorInfo.name}}</text>
+      <text>{{doctorInfo.sex}}</text>
+    </view>
+    <text class="doctorAge">{{doctorInfo.age}}</text>
+  </view>
+  <view class="doctorDetail Dpanel">
+    <view class="doctorIntro">
+      <text class="Dbadge">简介</text>
+      <view class="doctorMessage">
+        <text>{{doctorInfo.name}}</text>
+        <text>{{doctorInfo.department}}</text>
+        <text>{{doctorInfo.treatment}}</text>
+      </view>
+    </view>
+    <view class="doctorTime">
+      <text class="Dbadge badge-time">出诊时间</text>
+      <view class="doctorMessage">
+        <text>{{doctorInfo.time}}</text>
+      </view>
+    </view>
+    <view class="doctorNum">
+      <text class="Dbadge badge-num">医生码</text>
+      {{doctorInfo.num}}
+    </view>
+  </view>
+  <view class="doctorContact">
+    <view class="borderB">{{doctorInfo.tel}}</view>
+    <view>{{doctorInfo.hospital}}</view>
+  </view>
+  <view class="doctorBills Dpanel">
+    <view>药品列表</view>
+    <block wx:for='{{doctorInfo.bills}}' wx:for-item="item" wx:key="id">
+      <view class="billItem">
+        <text class="Dbadge badge-num">{{item.num}}</text>
+        <text>{{item.name}}</text>
+      </view>
+    </block>
+  </view>
+</view>

@@ -17,8 +17,8 @@
       <scroll-view scroll-y="true" style='height:{{ phoneInfo.screenHeight-186}}px'>
         <!-- 医生列表 -->
         <view class="doctorLists">
-          <block wx:for="{{doctorLists}}" wx:for-item="item" wx:key="id">
-            <navigator url="info?teamId={{item.team_id}}">
+          <block wx:for="{{doctorLists}}" wx:for-item="item" wx:key="id" wx:for-index="doctor_id">
+            <navigator url="../GdoctorDetail/GdoctorDetail?doctorId={{doctor_id}}">
               <view class="doctorList">
                 <view class="doctorListInfo">
                   <view class="doctorImg">

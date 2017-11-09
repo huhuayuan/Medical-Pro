@@ -2,6 +2,7 @@
   "pages":[
     "pages/Dadadvice/Dadadvice",
     "pages/GdoctorList/GdoctorList",
+    "pages/GdoctorDetail/GdoctorDetail",
     "pages/index/index",
     "pages/doctorList/doctorList",
     "pages/logs/logs"

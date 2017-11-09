@@ -1,0 +1,88 @@
+.doctorPanel {
+  font-size: 22rpx;
+  color: #888888;
+}
+.Dpanel {
+  background: #fff;
+  padding: 24rpx 30rpx;
+  margin-bottom: 20rpx;
+}
+.doctorHeader {
+  font-size: 28rpx;
+  color: #101010;
+  border-bottom: 1px solid #d2d2d2;
+  background: #fff;
+  padding: 12rpx 30rpx;
+  margin-bottom: 20rpx;
+}
+.doctorInfo {
+  display: flex;
+  align-items:center;
+}
+.doctorAvatar {
+  margin-right: 40rpx;
+}
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border: 1px solid #d2d2d2;
+  border-radius: 50%;
+}
+.doctorName {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top:8rpx;
+}
+.Dname {
+  font-size: 28rpx;
+  color: #101010;
+}
+.Dbadge {
+  width: 82rpx;
+  background: #40c0e3;
+  border-radius: 4px;
+  padding: 6rpx 12rpx;
+  color: #fff;
+  font-size:20rpx;
+  text-align: center;
+  margin-right:28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+}
+.badge-time {
+  background: #fff;
+  border: 1px solid #03a9f4;
+  color: #03a9f4;
+}
+.badge-num {
+  background-color: #88cccc;
+}
+.doctorIntro,.doctorTime {
+  display: flex;
+  line-height:40rpx;
+  padding-bottom: 20rpx;
+}
+.doctorMessage {
+  display: flex;
+  flex-direction: column;
+}
+.doctorNum {
+  display: flex;
+  align-items: center;
+  line-height:40rpx;
+}
+.borderB{
+  border-bottom: 1px solid #e1e2e3;
+}
+.doctorContact {
+  background: #fff;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+  line-height: 64rpx;
+}
+.billItem {
+  padding: 16rpx 0;
+  display: flex;
+  align-items:center;
+}
