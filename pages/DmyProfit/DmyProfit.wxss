@@ -1,1 +1,38 @@
 /* pages/DmyProfit/DmyProfit.wxss */
+
+.docotrInfo {
+    background: #fff;
+    padding: 40rpx 60rpx;
+    display: flex;
+    margin-bottom: 30rpx;
+}
+.docotrInfo image {
+    width: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    border-radius: 54rpx;
+    margin-right: 40rpx;
+    background: #eee;
+}
+.docotrInfo text {
+    line-height: 90rpx;
+    font-size:34rpx;
+    color: #888;
+}
+.docotrProfit {
+    padding: 40rpx 40rpx 40rpx 60rpx;
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+}
+.content {
+    display: flex;
+    color: #888;
+    font-size: 28rpx;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+}
+.profit {
+    font-size: 36rpx;
+    color: #888;
+}

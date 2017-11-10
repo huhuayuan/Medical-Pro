@@ -2,7 +2,7 @@
 
 .personalImg {
     display: flex;
-    padding: 48rpx 60rpx;
+    padding: 40rpx 60rpx;
     background: #fff;
     margin-bottom: 20rpx;
 }
@@ -12,6 +12,7 @@
     text-align: center;
     border-radius: 54rpx;
     margin-right: 40rpx;
+    background: #eee;
 }
 .info{
     display: flex;
@@ -20,10 +21,10 @@
 .Pname {
     font-size: 28rpx;
     color: #101010;
-    margin-bottom: 14rpx;
+    margin: 16rpx 0;
 }
 .Psex {
-    font-size: 20rpx;
+    font-size: 22rpx;
     color:#888;
 }
 /**/
@@ -44,7 +45,6 @@
 .iconArr {
     width: 22rpx;
     height: 36rpx;
-    background: #ccc;
     margin: 22rpx 60rpx 0 0;
 }
 .clearBorder {
@@ -57,7 +57,6 @@
 .iconGroup .iconArr {
     width: 22rpx;
     height: 36rpx;
-    background: #ccc;
     margin: 22rpx 0 0 40rpx;
     justify-content:space-between;
 }

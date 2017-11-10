@@ -11,15 +11,15 @@
     <navigator url="../DpersonalInfo/DpersonalInfo">
         <view class='infoGroup'>
             <text>个人信息</text>
-            <text class='iconArr'></text>
+            <image src="../../images/arrow.png" class='iconArr'></image>
         </view>
     </navigator>
-    <navigator url="url">
+    <navigator url="../DmyProfit/DmyProfit">
         <view class='infoGroup'>
             <text>我的收益</text>
             <view class='iconGroup'>
                 {{personalInfo.price}} 元
-                <text class='iconArr'></text>
+                <image src="../../images/arrow.png" class='iconArr'></image>
             </view>
         </view>
     </navigator>
@@ -28,20 +28,21 @@
             <text>我的药品</text>
             <view class='iconGroup'>
                 {{personalInfo.medicine}}
-                <text class='iconArr'></text>
+                <image src="../../images/arrow.png" class='iconArr'></image>
+                <!--<text class='iconArr'></text>-->
             </view>
         </view>
     </navigator>
     <navigator url="../DFAQ/DFAQ">
         <view class='infoGroup'>
             <text>常见问题</text>
-            <text class='iconArr'></text>
+            <image src="../../images/arrow.png" class='iconArr'></image>
         </view>
     </navigator>
     <navigator url="../DaboutUs/DaboutUs">
         <view class='infoGroup clearBorder'>
             <text>关于我们</text>
-            <text class='iconArr'></text>
+            <image src="../../images/arrow.png" class='iconArr'></image>
         </view>
     </navigator>
 </view>
@@ -50,13 +51,13 @@
     <navigator url="url">
         <view class='infoGroup'>
             <text>附近药柜</text>
-            <text class='iconArr'></text>
+            <image src="../../images/arrow.png" class='iconArr'></image>
         </view>
     </navigator>
     <navigator url="url">
         <view class='infoGroup clearBorder'>
             <text>设置</text>
-            <text class='iconArr'></text>
+            <image src="../../images/arrow.png" class='iconArr'></image>
         </view>
     </navigator>
 </view>

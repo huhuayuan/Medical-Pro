@@ -1,10 +1,11 @@
 {
   "pages":[
-    "pages/DmyProfit/DmyProfit",
     "pages/DpersonalCenter/DpersonalCenter",
     "pages/DpersonalInfo/DpersonalInfo",
     "pages/DmyMedicine/DmyMedicine",
     "pages/DaboutUs/DaboutUs",
+    "pages/DmyProfit/DmyProfit",
+    "pages/DprofitDetail/DprofitDetail",
     "pages/DFAQ/DFAQ",
     "pages/Dadadvice/Dadadvice",
     "pages/GdoctorList/GdoctorList",
