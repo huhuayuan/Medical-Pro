@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/DpersonalCenter/DpersonalCenter",
     "pages/Dadadvice/Dadadvice",
     "pages/GdoctorList/GdoctorList",
     "pages/index/index",

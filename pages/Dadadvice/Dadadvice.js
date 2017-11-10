@@ -2,7 +2,7 @@
 Page({
   data: {  
     navbar: ['患者列表', '新建医嘱'],  
-    currentTab: 0  ,
+    currentTab: 1  ,
     sex : ['男','女'],
     sexTab : null,
     search:{
@@ -11,6 +11,7 @@ Page({
     },
     searchResult : [
       {
+        id:'P000001',
         name:'王某某',
         age:28,
         sex:'女',
@@ -18,6 +19,7 @@ Page({
         patientCase :'感冒发烧......',
         image: '../../images/case.png'
       },{
+        id:'P000001',
         name:'王某某',
         age:28,
         sex:'女',
@@ -25,6 +27,7 @@ Page({
         patientCase :'感冒发烧......',
         image: '../../images/case.png'
       },{
+        id:'P000001',
         name:'王某某',
         age:28,
         sex:'女',

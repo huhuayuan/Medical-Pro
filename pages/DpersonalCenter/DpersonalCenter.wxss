@@ -1,0 +1,33 @@
+/* pages/DpersonalCenter/DpersonalCenter.wxss */
+
+.personalImg {
+    display: flex;
+    padding: 40rpx;
+    background: #fff;
+    margin-bottom: 20rpx;
+}
+.personalImg image {
+    width: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    border-radius: 54rpx;
+    margin-right: 40rpx;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+}
+.Pname {
+    font-size: 28rpx;
+    color: #101010;
+    margin-bottom: 14rpx;
+}
+.Psex {
+    font-size: 20rpx;
+    color:#888;
+}
+/**/
+.personalInfo {
+    background: #fff;
+    padding: 40rpx 0 0 40rpx;
+}

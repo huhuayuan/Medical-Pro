@@ -1,0 +1,15 @@
+<!--pages/DpersonalCenter/DpersonalCenter.wxml-->
+<view class='personalImg'>
+    <image src="{{personalInfo.image}}"></image>
+    <view class='info'>
+        <text class='Pname'>{{personalInfo.name}}</text>
+        <text class='Psex'>{{personalInfo.sex}}</text>
+    </view>
+</view>
+
+<view class='personalInfo'>
+    <view class='infoGroup'>
+        <text>个人信息</text>
+        <text><icon type="String"></icon></text>
+    </view>
+</view>
