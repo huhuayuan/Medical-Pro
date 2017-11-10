@@ -1,0 +1,40 @@
+<!--pages/DpersonalInfo/DpersonalInfo.wxml-->
+
+<view class='personalInfo'>
+        <view class='infoGroup head'>
+            <text>头像</text>
+            <image src="{{personalInfo.image}}" class='personalImg'></image>
+        </view>
+        <view class='infoGroup'>
+            <text>姓名</text>
+            <text class='Pinfo'>{{personalInfo.name}}</text>
+        </view>
+        <view class='infoGroup'>
+            <text>性别</text>
+            <text class='Pinfo'>{{personalInfo.sex}}</text>
+        </view>
+        <view class='infoGroup'>
+            <text>年龄</text>
+            <text class='Pinfo'>{{personalInfo.age}}</text>
+        </view>
+        <view class='infoGroup'>
+            <text>联系方式</text>
+            <text class='Pinfo'>{{personalInfo.mobile}}</text>
+        </view>
+        <view class='infoGroup'>
+            <text>医院</text>
+            <text class='Pinfo'>{{personalInfo.conpany}}</text>
+        </view>
+        <view class='infoGroup'>
+            <text>科室</text>
+            <text class='Pinfo'>{{personalInfo.department}}</text>
+        </view>
+        <view class='infoGroup'>
+            <text>主治</text>
+            <text class='Pinfo'>{{personalInfo.attending}}</text>
+        </view>
+        <view class='infoGroup clearBorder'>
+            <text>医生码</text>
+            <text class='Pinfo'>{{personalInfo.doctorCode}}</text>
+        </view>
+</view>

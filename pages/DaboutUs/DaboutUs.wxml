@@ -1,0 +1,11 @@
+<!--pages/DaboutUs/DaboutUs.wxml-->
+<view class='contain'>
+    <view class='title'>{{us.title}}</view>
+    <image src="{{us.image}}" class='usImg'></image>
+    <block  wx:for="{{us.section}}" wx:for-item="item" wx:key="id">
+        <view class='section'>
+            <text>{{item.h1}}</text>
+            <text>{{item.text}}</text>
+        </view>
+    </block>
+</view>

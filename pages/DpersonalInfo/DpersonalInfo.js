@@ -1,17 +1,21 @@
-// pages/DpersonalCenter/DpersonalCenter.js
+// pages/DpersonalInfo/DpersonalInfo.js
 Page({
   data:{
     personalInfo:{
       id:'D000001',
+      image:'../../images/case.png',
       name:'张某某',
       sex:'男',
-      image:'../../images/case.png',
-      price:'10,000.00',
-      medicine:5
+      age: 29,
+      mobile: 15134578149,
+      conpany:'****医院',
+      department:'外科',
+      attending: '骨科',
+      doctorCode: 'D000001'
     }
   },
   onLoad:function(options){
-    wx.request({
+     wx.request({
       url: 'https://URL',
       data: {},
       method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT

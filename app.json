@@ -1,6 +1,10 @@
 {
   "pages":[
+    "pages/DmyMedicine/DmyMedicine",
     "pages/DpersonalCenter/DpersonalCenter",
+    "pages/DpersonalInfo/DpersonalInfo",
+    "pages/DaboutUs/DaboutUs",
+    "pages/DFAQ/DFAQ",
     "pages/Dadadvice/Dadadvice",
     "pages/GdoctorList/GdoctorList",
     "pages/GdoctorDetail/GdoctorDetail",

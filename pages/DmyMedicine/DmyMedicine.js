@@ -1,14 +1,9 @@
-// pages/DpersonalCenter/DpersonalCenter.js
+// pages/DmyMedicine/DmyMedicine.js
 Page({
   data:{
-    personalInfo:{
-      id:'D000001',
-      name:'张某某',
-      sex:'男',
-      image:'../../images/case.png',
-      price:'10,000.00',
-      medicine:5
-    }
+    medicineData :{
+      
+      }
   },
   onLoad:function(options){
     wx.request({

@@ -8,8 +8,55 @@
 </view>
 
 <view class='personalInfo'>
-    <view class='infoGroup'>
-        <text>个人信息</text>
-        <text><icon type="String"></icon></text>
-    </view>
+    <navigator url="../DpersonalInfo/DpersonalInfo">
+        <view class='infoGroup'>
+            <text>个人信息</text>
+            <text class='iconArr'></text>
+        </view>
+    </navigator>
+    <navigator url="url">
+        <view class='infoGroup'>
+            <text>我的收益</text>
+            <view class='iconGroup'>
+                {{personalInfo.price}} 元
+                <text class='iconArr'></text>
+            </view>
+        </view>
+    </navigator>
+    <navigator url="url">
+        <view class='infoGroup'>
+            <text>我的药品</text>
+            <view class='iconGroup'>
+                {{personalInfo.medicine}}
+                <text class='iconArr'></text>
+            </view>
+        </view>
+    </navigator>
+    <navigator url="../DFAQ/DFAQ">
+        <view class='infoGroup'>
+            <text>常见问题</text>
+            <text class='iconArr'></text>
+        </view>
+    </navigator>
+    <navigator url="../DaboutUs/DaboutUs">
+        <view class='infoGroup clearBorder'>
+            <text>关于我们</text>
+            <text class='iconArr'></text>
+        </view>
+    </navigator>
+</view>
+
+<view class='setInfo'>
+    <navigator url="url">
+        <view class='infoGroup'>
+            <text>附近药柜</text>
+            <text class='iconArr'></text>
+        </view>
+    </navigator>
+    <navigator url="url">
+        <view class='infoGroup clearBorder'>
+            <text>设置</text>
+            <text class='iconArr'></text>
+        </view>
+    </navigator>
 </view>

@@ -111,7 +111,21 @@ Page({
     }
   },
   onLoad:function(options){
-    
+    wx.request({
+      url: 'https://URL',
+      data: {},
+      method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
+      // header: {}, // 设置请求的 header
+      success: function(res){
+        // success
+      },
+      fail: function() {
+        // fail
+      },
+      complete: function() {
+        // complete
+      }
+    })
     // 页面初始化 options为页面跳转所带来的参数
   },
   onReady:function(){

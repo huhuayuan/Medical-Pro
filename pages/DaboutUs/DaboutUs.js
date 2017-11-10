@@ -1,13 +1,23 @@
-// pages/DpersonalCenter/DpersonalCenter.js
+// pages/DaboutUs/DaboutUs.js
 Page({
   data:{
-    personalInfo:{
-      id:'D000001',
-      name:'张某某',
-      sex:'男',
-      image:'../../images/case.png',
-      price:'10,000.00',
-      medicine:5
+    us:{
+      title:'科创介绍',
+      image: '../../images/case.png',
+      section: [
+        {
+          h1:'公司介绍',
+          text:'成立于2017年1月1日，公司主做医疗类，目前开拓北京市场......'
+        },
+        {
+          h1:'公司介绍',
+          text:'成立于2017年1月1日，公司主做医疗类，目前开拓北京市场......'
+        },
+        {
+          h1:'公司介绍',
+          text:'成立于2017年1月1日，公司主做医疗类，目前开拓北京市场......'
+        }
+      ]
     }
   },
   onLoad:function(options){
