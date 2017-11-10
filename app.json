@@ -10,7 +10,7 @@
     "pages/GdoctorList/GdoctorList",
     "pages/GdoctorDetail/GdoctorDetail",
     "pages/index/index",
-    "pages/doctorList/doctorList",
+    "pages/Gself/Gself",
     "pages/logs/logs"
     
   ],
@@ -32,7 +32,7 @@
             "selectedIconPath": "images/doctor-selected.png"
         },
         {
-            "pagePath": "pages/self/self",
+            "pagePath": "pages/Gself/Gself",
             "text": "我的",
             "iconPath": "images/self.png",
             "selectedIconPath": "images/self-selected.png"
