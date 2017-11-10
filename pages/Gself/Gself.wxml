@@ -1,0 +1,37 @@
+<view class="selfPanel">
+  <view class="selfInfo Spanel">
+    <view class="selfAvatar">
+      <image class='avatar' src='{{myInfo.image}}'></image>
+    </view>
+    <view class="selfName">
+      <text class="Sname">{{myInfo.name}}</text>
+      <text>{{myInfo.sex}}</text>
+    </view>
+  </view>
+  <view class="selfMessage">
+    <view class="selfItem borderB">
+      <text class="selfDesc">个人信息</text>
+      <image class='arrow' src='../../images/arrow.png'></image>
+    </view>
+    <view class="selfItem borderB">
+      <text class="selfDesc">我的收益</text>
+      <text style="padding-right: 20rpx">100</text>
+      <image class='arrow' src='../../images/arrow.png'></image>
+    </view>
+    <view class="selfItem borderB">
+      <text class="selfDesc">我的药品</text>
+      <text style="padding-right: 20rpx">10</text>
+    </view>
+    <view class="selfItem">
+      <text class="selfDesc">医生收益</text>
+      <text style="padding-right: 20rpx">200</text>
+    </view>
+  </view>
+  <view class="setting">
+    <view class="selfItem borderB">
+      <text class="selfDesc">附近药柜</text>
+      <image class='arrow' src='../../images/arrow.png'></image>
+    </view>
+    <view>设置</view>
+  </view>
+</view>

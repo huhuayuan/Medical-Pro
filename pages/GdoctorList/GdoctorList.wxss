@@ -82,6 +82,7 @@ swiper {
 .Dname {
   font-size: 28rpx;
   color: #101010;
+  padding-bottom: 4rpx;
 }
 .Dbadge {
   background: #40c0e3;
