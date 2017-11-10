@@ -32,9 +32,39 @@ App({
     //     }
     //   }
     // })
+    var that = this;
+    that.globalData.phoneInfo = wx.getSystemInfoSync()
   },
   globalData: {
     userInfo: null,
     API_URL:''
-  }
+  },
+  // 获取书本信息 传入 doctor
+  getDoctorInfo: function (data, callback) {
+    var doctorInfo = {
+      name:'张某某',
+      hospital:'北京协和医院',
+      department:'内科',
+      treatment:'呼吸内科',
+      time:'周一，周二，周三，周六，周日',
+      num:'001568',
+      image: '../../images/doctor.png',
+      sex: '男',
+      tel: 18812345678,
+      age: 36,
+      bills: [
+        {
+          num: 123456,
+          name:'感冒颗粒'
+        },{
+          num: 123456,
+          name:'感冒颗粒'
+        },{
+          num: 123456,
+          name:'感冒颗粒'
+        }
+      ]
+    };
+    callback(doctorInfo)
+  },
 })

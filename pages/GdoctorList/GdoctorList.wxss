@@ -1,8 +1,14 @@
+page {
+  background-color: #fff;
+}
 view{
   box-sizing: border-box;
 }
 .list-tmp {
   background: #fff;
+}
+swiper {
+  height:calc(100vh - 38px);
 }
 .swipper-tab{
   border-bottom: 1px solid #e1e2e3;
@@ -25,7 +31,7 @@ view{
   border-bottom: 1px solid #e1e2e3;
 }
 .searchBar {
-  width: 94%;
+  width: 90%;
   background: #f0f0f0;
   margin: 0 auto;
   color: #b2b2b2;
@@ -46,6 +52,119 @@ view{
     float: left;
     margin-top: 4px;
 }
+.doctorLists {
+  padding: 0 30rpx;
+}
 .doctorList {
+  padding: 30rpx 0;
+  border-bottom: 1px solid #e1e2e3;
+}
+.doctorListInfo {
+  color: #888888;
+  display: flex;
+  font-size: 22rpx;
+}
+.doctorImg {
+  padding-right: 40rpx;
+}
+.doctorImg image {
+  width: 90rpx;
+  height: 90rpx;
+  border: 1px solid #e1e2e3;
+  border-radius: 50%;
+}
+.doctorDesc {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  line-height:38rpx;
+}
+.Dname {
+  font-size: 28rpx;
+  color: #101010;
+}
+.Dbadge {
+  background: #40c0e3;
+  border-radius: 4px;
+  padding: 6rpx;
+  color: #fff;
+  font-size:20rpx;
+  margin-right:10rpx;
+}
+.doctorAge {
+  margin-top: 30rpx;
+}
+
+.context {
+    color: #101010;
+    font-size: 28rpx;
+}
+.basic {
+    background-color: #fff;
+    padding: 30rpx 30rpx 0;
+}
+.inputGroup {
+    position: relative;
+    margin-bottom: 10rpx;
+}
+.inputGroup input {
+    border-bottom: 2rpx solid #d2d2d2;
+    padding: 10rpx 30rpx;
+}
+.inputGroup image {
+    width: 52rpx;
+    height: 72rpx;
+    position: absolute;
+    right: 6rpx;
+    top: 0;
+}
+.classInput {
+    border-bottom: 2rpx solid #d2d2d2;
+    padding: 10rpx 30rpx;
+    height: 52rpx;
+    box-sizing: content-box;
+}
+.sexTab {
+    float: left;
+    padding: 4rpx 16rpx;
+    border: 2rpx dashed #d2d2d2;
+    border-radius: 8rpx;
+    margin-right: 16rpx;
+}
+.classInput .active {
+    border: 2rpx solid #40c0e3;
+}
+.doctorInfo {
+    background-color: #fff;
+    padding: 0 30rpx 20rpx;
+}
+.medicineChange {
+    display: inline-block;
+    font-size: 22rpx;
+    border: 4rpx dashed #d2d2d2;
+    padding: 4rpx 10rpx;
+    text-align: center;
+    border-radius: 8rpx;
+}
+.mc {
+    margin-top: 20rpx;
+    color: #888
+}
+.submit-btn {
   padding: 30rpx;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #e1e2e3;
+  z-index: 1;
+}
+.submit-btn button{
+  width:90%;
+  margin:0 auto;
+  border-radius:5px;
+  height:46px;
+  background: #03a9f4;
+  text-align: center;
+  color:#fff;
 }
