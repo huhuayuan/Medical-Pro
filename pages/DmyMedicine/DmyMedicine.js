@@ -1,9 +1,48 @@
 // pages/DmyMedicine/DmyMedicine.js
 Page({
   data:{
-    medicineData :{
-      
+    medicineData :[
+      {
+        medicineImg:'../../images/case.png',
+        medicineName:'[XXXX]感冒咳嗽胶囊',
+        medicineEffect:'清热解毒，止咳化痰',
+        medicineSpec:'0.3g*16粒',
+        PlaceofOrigin:'中国',
+        medicinePrice: 13.5,
+        userImg:'../../images/case.png',
+        userName:'李某某',
+      },
+      {
+        medicineImg:'../../images/case.png',
+        medicineName:'[XXXX]感冒咳嗽胶囊',
+        medicineEffect:'清热解毒，止咳化痰',
+        medicineSpec:'0.3g*16粒',
+        PlaceofOrigin:'中国',
+        medicinePrice: 13.5,
+        userImg:'',
+        userName:'',
+      },
+      {
+        medicineImg:'../../images/case.png',
+        medicineName:'[XXXX]感冒咳嗽胶囊',
+        medicineEffect:'清热解毒，止咳化痰',
+        medicineSpec:'0.3g*16粒',
+        PlaceofOrigin:'中国',
+        medicinePrice: 13.5,
+        userImg:'../../images/case.png',
+        userName:'李某某',
+      },
+      {
+        medicineImg:'../../images/case.png',
+        medicineName:'[XXXX]感冒咳嗽胶囊',
+        medicineEffect:'清热解毒，止咳化痰',
+        medicineSpec:'0.3g*16粒',
+        PlaceofOrigin:'中国',
+        medicinePrice: 13.5,
+        userImg:'',
+        userName:'',
       }
+    ]
   },
   onLoad:function(options){
     wx.request({

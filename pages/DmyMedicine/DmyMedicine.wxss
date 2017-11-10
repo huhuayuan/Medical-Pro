@@ -1,1 +1,62 @@
 /* pages/DmyMedicine/DmyMedicine.wxss */
+.contain {
+    background: #fff;
+    padding: 0 40rpx;
+}
+.medicineList {
+    display: flex;
+    justify-content: space-between;
+    padding: 40rpx 0;
+    border-bottom: 2rpx solid #e1e2e3;
+}
+.medicineImg {
+    width: 30%;
+}
+.medicineImg image {
+    width: 100%;
+    height: 70%;
+}
+.medicineInfo {
+    display: flex;
+    flex-flow: column;
+    font-size: 28rpx;
+    width: 50%;
+}
+.medicineInfo text{
+    font-size: 28rpx;
+    color: #888;
+    margin-bottom: 10rpx;
+    overflow: hidden;
+}
+.medicineInfo text:first-of-type {
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #101010;
+}
+.medicineInfo text:last-of-type {
+    font-size: 34rpx;
+    color: #e51c23;
+}
+.medicineUser {
+    display: flex;
+    flex-flow: column;
+    font-size: 28rpx;
+}
+.medicineUser image {
+    width: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    border-radius: 54rpx;
+}
+.medicineUser text {
+    color: #888;
+    margin: 10rpx 0;
+}
+.medicineUser text.mark {
+    text-align: center;
+    line-height: 48rpx;
+    border-radius: 8rpx;
+    color: #fff;
+    background: #40c0e3;
+}
+

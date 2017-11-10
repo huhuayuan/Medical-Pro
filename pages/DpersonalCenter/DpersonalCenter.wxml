@@ -23,7 +23,7 @@
             </view>
         </view>
     </navigator>
-    <navigator url="url">
+    <navigator url="../DmyMedicine/DmyMedicine">
         <view class='infoGroup'>
             <text>我的药品</text>
             <view class='iconGroup'>
