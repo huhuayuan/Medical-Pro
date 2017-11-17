@@ -1,8 +1,9 @@
 {
   "pages":[
+    "pages/Dadadvice/Dadadvice",
     "pages/DcaseEditor/DcaseEditor",
     "pages/Dpatient/Dpatient",
-    "pages/Dadadvice/Dadadvice",
+    "pages/DinfoEditor/DinfoEditor",
     "pages/DpersonalCenter/DpersonalCenter",
     "pages/DpersonalInfo/DpersonalInfo",
     "pages/DmyMedicine/DmyMedicine",

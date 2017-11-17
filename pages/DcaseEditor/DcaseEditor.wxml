@@ -7,22 +7,22 @@
     <view class='textGroup'>
         <text class='icon iconS'>简述</text>
         <view class='content'>
-            <input type="text" name='sketch' value='{{patient.sketch}}' placeholder="输入简述病情"/>
+            <input type="text" name='sketch' value='{{patient.sketch}}' bindinput="sketchInput" placeholder="输入简述病情"/>
         </view>
     </view>
     <view class='textGroup'>
         <text class='icon iconC'>详情</text>
         <view class='content'>
-            <input type="text" name='details' value='{{patient.details}}' placeholder="输入详细说明"/>
+            <input type="text" name='details' value='{{patient.details}}' bindinput="detailsInput" placeholder="输入详细说明"/>
         </view>
     </view>
     <view class='textGroup'>
         <text class='icon iconP'>处方</text>
         <view class='content caseStyle'>
             <view class='default'>选择药品</view>
-            <view wx:for='{{patient.prescription}}' wx:key='code' class='select'>{{item.yp_code}}</view>
+            <view wx:for='{{patient.prescription}}' wx:key='code' class='select'>{{item}}</view>
         </view>
     </view>
 
-    <button type="default" class='submit'>保存</button>
+    <button type="default" class='submit' bindtap="submitCase">保存</button>
 </view>

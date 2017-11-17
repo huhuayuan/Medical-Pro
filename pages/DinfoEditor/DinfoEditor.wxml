@@ -1,0 +1,9 @@
+<!--pages/DinfoEditor/DinfoEditor.wxml-->
+<view class='editor'>
+    <view class='textGroup'>
+        <view class='content'>
+            <input type="text" name='name' value='{{personalInfo.name}}' bindinput="inputName" placeholder="输入姓名"/>
+        </view>
+    </view>
+    <button class='preserve' bindtap="preserve">保存</button>
+</view>

@@ -1,36 +1,32 @@
-// pages/DcaseEditor/DcaseEditor.js
+// pages/DinfoEditor/DinfoEditor.js
 Page({
   data:{
-    cf_orderNo : '00000123',
-    patient:{
-        id:'P000001',
-        medHistory : '',
-        sketch : '感冒发烧......',
-        details: '由热伤风引起的的*******由热伤风引起的的*******由热伤风引起的的',
-        prescription : ['000025','000025','000025','000025','000025','000025','000025']
-      }
+    personalInfo:{
+      id:'D000001',
+      image:'../../images/case.png',
+      name:'张某某',
+      sex:'男',
+      age: 29,
+      mobile: 15134578149,
+      conpany:'****医院',
+      department:'外科',
+      attending: '骨科',
+      doctorCode: 'D000001'
+    }
   },
-  //输入简述
-  sketchInput:function(e){
-      this.setData({  
-        sexTab: e.detail.value
-      })  
+  inputName:function(e){
+      this.setData({
+        'personalInfo.name' : e.detail.value
+      })
   },
-  //输入详情
-  detailsInput:function(e){
-      this.setData({  
-        sexTab: e.detail.value
-      })  
-  },
-  //保存触发
-  submitCase:function(e){
-    wx.showToast({
-        title : '请稍后...',
+  preserve:function(e){
+      wx.showToast({
+        title : '正在保存...',
         icon : 'loading'
       });   
       wx.request({
         url: 'https://URL',
-        data: this.data.patient,
+        data: {personalInfo:{name:'张某某'}}, //this.data.personalInfo.name
         method: 'GET', // OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT
         // header: {}, // 设置请求的 header
         success: function(res){
