@@ -1,0 +1,10 @@
+<view class="selfPanel">
+  <navigator url="../GsetPassword/GsetPassword">
+    <view class="selfMessage">
+      <text class="selfDesc">账号密码</text>
+    </view>
+  </navigator>
+  <view class="selfMessage">
+    <text class="selfDesc">退出登录</text>
+  </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="doctorLists">
+  <block wx:for="{{myInfo.doctorLists}}" wx:for-item="item" wx:key="id" wx:for-index="doctor_id">
+    <view class="doctorList">
+      <view class="doctorListInfo">
+        <view class="doctorImg">
+          <image class='avatar' src='{{item.image}}'></image>
+        </view>
+        <view class="doctorDesc">
+          <text class="Dname">{{item.name}}</text>
+          <text class='Dhospital'>医院：{{item.hospital}}</text>
+          <text class='Ddepartment'>科室：{{item.department}}</text>
+          <view>
+            <text class='Dnum Dbadge'>医生码</text> {{item.num}}
+          </view>
+        </view>
+        <view class="docotrProfit">
+          <text>收益（元）</text>
+          <text class="profit">{{item.profit}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

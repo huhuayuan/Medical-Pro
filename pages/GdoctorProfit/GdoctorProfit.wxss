@@ -1,0 +1,71 @@
+/* pages/DmyProfit/DmyProfit.wxss */
+.selfInfo {
+  display: flex;
+  align-items:center;
+  background: #fff;
+  padding: 24rpx 30rpx;
+  margin-bottom: 20rpx;
+}
+.docotrInfo {
+    background: #fff;
+    padding: 40rpx 60rpx;
+    display: flex;
+}
+.selfInfo image {
+    width: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    border-radius: 54rpx;
+    margin-right: 40rpx;
+    background: #eee;
+}
+.docotrInfo text {
+    line-height: 90rpx;
+    font-size:34rpx;
+    color: #888;
+}
+.docotrProfit {
+    background: #fff;
+    display: flex;
+    flex-flow: column;
+    font-size: 28rpx;
+}
+.profit {
+    font-size: 36rpx;
+    color: #888;
+    padding-top: 20rpx;
+}
+
+.doctorList {
+  padding: 30rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.doctorListInfo {
+  color: #888888;
+  display: flex;
+  font-size: 22rpx;
+}
+.doctorImg {
+  padding-right: 40rpx;
+}
+.doctorImg image {
+  width: 90rpx;
+  height: 90rpx;
+  border: 1px solid #e1e2e3;
+  border-radius: 50%;
+}
+.doctorDesc {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  line-height:38rpx;
+}
+.Dbadge {
+  background: #40c0e3;
+  border-radius: 4px;
+  padding: 6rpx;
+  color: #fff;
+  font-size:20rpx;
+  margin-right:10rpx;
+}

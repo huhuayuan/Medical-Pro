@@ -1,0 +1,22 @@
+<!--pages/DmyMedicine/DmyMedicine.wxml-->
+<view class='contain'>
+    <block wx:for="{{medicineData}}" wx:for-item="item" wx:key="id">
+        <view class='medicineList'>
+            <view class='medicineImg'>
+                <image src="{{item.medicineImg}}"></image>
+            </view>
+            <view class='medicineInfo'>
+                <text>{{item.medicineName}}</text>
+                <text>功效：{{item.medicineEffect}}</text>
+                <text>规格：{{item.medicineSpec}}</text>
+                <text>产地：{{item.PlaceofOrigin}}</text>
+                <text>￥{{item.medicinePrice}}</text>
+            </view>
+            <view class='medicineUser'>
+                <image src="{{item.userImg}}"></image>
+                <text>{{item.userName}}</text>
+                <text class='mark' wx:if="{{item.userName != '' && item.userImg != ''}}">在用</text>
+            </view>
+        </view>
+    </block>
+</view>

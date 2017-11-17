@@ -1,0 +1,42 @@
+.selfPanel {
+  font-size: 26rpx;
+  color: #888888;
+}
+/*.Spanel {
+  background: #fff;
+  padding: 24rpx 30rpx;
+  margin-bottom: 20rpx;
+}*/
+.selfInfo {
+  display: flex;
+  align-items:center;
+  background: #fff;
+  padding: 24rpx 0;
+}
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border: 1px solid #d2d2d2;
+  border-radius: 50%;
+}
+.selfName {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  padding-top:8rpx;
+}
+.borderB{
+  border-bottom: 1px solid #e1e2e3;
+}
+.selfMessage {
+  background: #fff;
+  padding: 0 30rpx;
+  line-height: 80rpx;
+}
+.selfItem {
+  display: flex;
+  align-items: center;
+}
+.selfDesc{
+  flex: auto;
+}

@@ -1,0 +1,12 @@
+<!--pages/DmyProfit/DmyProfit.wxml-->
+<view class='selfInfo'>
+    <image src="{{myInfo.image}}"></image>
+    <text>{{myInfo.name}}</text>
+</view>
+<view class='docotrProfit'>
+    <view class='content'>
+        <text>我的收益（元）</text>
+        <navigator url="../GprofitDetail/GprofitDetail"><text>明细</text></navigator>
+    </view>
+    <text class='profit'>{{myInfo.profit}}</text>
+</view>

@@ -12,6 +12,14 @@
     "pages/GdoctorDetail/GdoctorDetail",
     "pages/index/index",
     "pages/Gself/Gself",
+    "pages/Gsetting/Gsetting",
+    "pages/GsetPassword/GsetPassword",
+    "pages/Gmap/Gmap",
+    "pages/GmyProfit/GmyProfit",
+    "pages/GdoctorProfit/GdoctorProfit",
+    "pages/GPersonInfo/GPersonInfo",
+    "pages/GprofitDetail/GprofitDetail",
+    "pages/GmyMedicine/GmyMedicine",
     "pages/logs/logs"
     
   ],

@@ -1,0 +1,31 @@
+/* pages/DprofitDetail/DprofitDetail.wxss */
+page {
+    background: #fff;
+}
+.detail {
+    line-height: 100rpx;
+    font-size: 32rpx;
+    color: #101010;
+    padding: 0 60rpx;
+    border-bottom: 2rpx solid #e1e2e3;
+}
+.detailList {
+    padding: 0 0 0 50rpx;
+}
+.list {
+    padding: 30rpx 60rpx 30rpx 10rpx;
+    border-bottom: 2rpx solid #e1e2e3;
+}
+.lis:last-of-type {
+    border-bottom:none;
+}
+.list view {
+    display: flex;
+    justify-content: space-between;
+    font-size: 28rpx;
+}
+.list view:last-of-type {
+    color: #888;
+    font-size: 24rpx;
+    margin-top: 14rpx;
+}

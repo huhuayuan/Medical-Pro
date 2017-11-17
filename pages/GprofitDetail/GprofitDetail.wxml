@@ -1,0 +1,16 @@
+<!--pages/DprofitDetail/DprofitDetail.wxml-->
+<view class='detail'>明细</view>
+<view class='detailList'>
+    <block wx:for='{{profitDetail}}' wx:for-item='item' wx:key='id'>
+        <view class='list'>
+            <view>
+                <text>收益</text>
+                <text>+{{item.income}}</text>
+            </view>
+            <view>
+                <text>{{item.time}}</text>
+                <text>{{item.prevProfit}}</text>
+            </view>
+        </view>
+    </block>
+</view>

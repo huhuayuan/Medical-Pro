@@ -1,0 +1,24 @@
+<view class="selfPanel">
+  <view class="selfMessage">
+    <view class="selfItem selfInfo borderB">
+      <text class="selfDesc selfName">头像</text>
+      <image class='avatar' src='{{myInfo.image}}'></image>
+    </view>
+    <view class="selfItem borderB">
+      <text class="selfDesc selfName">姓名</text>
+      <text>{{myInfo.name}}</text>
+    </view>
+    <view class="selfItem borderB">
+      <text class="selfDesc selfName">性别</text>
+      <text>{{myInfo.sex}}</text>
+    </view>
+    <view class="selfItem borderB">
+      <text class="selfDesc selfName">年龄</text>
+      <text>{{myInfo.age}}</text>
+    </view>
+    <view class="selfItem">
+      <text class="selfDesc selfName">联系方式</text>
+      <text>{{myInfo.tel}}</text>
+    </view>
+  </view>
+</view>

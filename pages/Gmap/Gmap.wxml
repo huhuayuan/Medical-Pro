@@ -1,0 +1,2 @@
+<map id="map" class="map" style="height:{{mapHeight}}; width:{{mapWidth}}" longitude="{{position.longitude}}" latitude="{{position.latitude}}" scale="{{scala}}" markers="{{markers}}" controls="{{controls}}" bindmarkertap="onMarkerTap" bindtap="onMapTap"
+show-location="true" />
