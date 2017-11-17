@@ -54,7 +54,7 @@
             <image src="../../images/arrow.png" class='iconArr'></image>
         </view>
     </navigator>
-    <navigator url="url">
+    <navigator url="../DinfoEditor/DinfoEditor">
         <view class='infoGroup clearBorder'>
             <text>设置</text>
             <image src="../../images/arrow.png" class='iconArr'></image>

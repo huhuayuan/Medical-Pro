@@ -1,0 +1,69 @@
+<!--pages/Dpatient/Dpatient.wxml-->
+<view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+</view>  
+<view hidden="{{currentTab!==0}}" class='context'>  
+    <view class='patient'>
+          <view class='patientImg'>
+              <image src="{{patient.image}}"></image>
+          </view>
+          <view class='patientInfo'>
+              <text class='pName'>{{patient.name}}</text>
+              <text class='pAge'>{{patient.age}}</text>
+              <text class='pSex'>{{patient.sex}}</text>
+              <!--<text class='pTime'>就诊时间：{{patient.time}}</text>-->
+          </view>
+      </view>
+
+      <view class='infoGroup'>
+            <view class='infoItem'>
+            <image src="{{patient.image}}" class='icon'></image>
+                <view class='itemIn'>{{patient.mobile}} <image src="{{patient.image}}" bindtap="calling"></image></view>
+            </view>
+            <view class='infoItem'>
+                <image src="{{patient.image}}" class='icon'></image>
+                <text>就诊时间：{{patient.time}}</text>
+            </view>
+      </view>
+
+      <view class='infoGroup'>
+            <view class='infoItem'>
+                <image src="{{patient.image}}" class='icon'></image>
+                <text>{{patient.medHistory?patient.medHistory:'无其他病史'}}</text>
+            </view>
+      </view>
+
+      <view class='infoGroup'>
+            <view class='infoItem'>
+                <image src="{{patient.image}}" class='icon'></image>
+                <view class='itemIn clearB'>在线聊天  
+                    <view class='talk'>
+                        微信账号
+                        <image src="../../images/arrow.png" class='icon'></image>
+                    </view>
+                </view>
+            </view>
+      </view>
+</view>
+
+<view hidden="{{currentTab!==1}}" class='context'>  
+    <navigator url="../DcaseEditor/DcaseEditor">
+        <view class='caseBox'>
+            <view class='textGroup'>
+                <text class='iconS'>简述</text> 
+                <text>{{patient.sketch}}</text>
+            </view>
+            <view class='textGroup'>
+                <text class='iconD'>详情</text> 
+                <text>{{patient.details}}</text>
+            </view>
+            <view class='textGroup'>
+                <text class='iconP'>处方</text> 
+                <text>
+                <block wx:for="{{patient.prescription}}" wx:key=''>{{item.yp_name}}  {{item.yp_specification}}
+                </block>
+                </text>
+            </view>
+        </view>
+    </navigator>
+</view>

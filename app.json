@@ -1,5 +1,9 @@
 {
   "pages":[
+    "pages/Dadadvice/Dadadvice",
+    "pages/DcaseEditor/DcaseEditor",
+    "pages/Dpatient/Dpatient",
+    "pages/DinfoEditor/DinfoEditor",
     "pages/DpersonalCenter/DpersonalCenter",
     "pages/DpersonalInfo/DpersonalInfo",
     "pages/DmyMedicine/DmyMedicine",
@@ -7,7 +11,6 @@
     "pages/DmyProfit/DmyProfit",
     "pages/DprofitDetail/DprofitDetail",
     "pages/DFAQ/DFAQ",
-    "pages/Dadadvice/Dadadvice",
     "pages/GdoctorList/GdoctorList",
     "pages/GdoctorDetail/GdoctorDetail",
     "pages/index/index",
@@ -21,7 +24,6 @@
     "pages/GprofitDetail/GprofitDetail",
     "pages/GmyMedicine/GmyMedicine",
     "pages/logs/logs"
-    
   ],
   "window":{
     "backgroundTextStyle":"light",

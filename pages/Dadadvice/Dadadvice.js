@@ -4,10 +4,20 @@ Page({
     navbar: ['患者列表', '新建医嘱'],  
     currentTab: 1  ,
     sex : ['男','女'],
-    sexTab : null,
+    sexTab : 0,
     search:{
       searchValue : '',
       showClearBtn : false
+    },
+    newAdvice:{
+        name : '',
+        sex: 0,
+        age: null,
+        mobile:null,
+        code:null,
+        sketch:'',
+        details:'',
+        prescription:[]
     },
     searchResult : [
       {
@@ -44,8 +54,45 @@ Page({
   },
   sexTap: function(e){  
     this.setData({  
-      sexTab: e.currentTarget.dataset.sex  
+      sexTab: e.currentTarget.dataset.sex, 
+      'newAdvice.sex' : e.currentTarget.dataset.sex
     })  
+  },
+  //输入姓名
+  nameInput:function(e){
+      this.setData({
+         'newAdvice.name' : e.detail.value
+      })
+  },
+  //输入年龄
+  ageInput:function(e){
+      this.setData({  
+         'newAdvice.age' : e.detail.value
+      })
+  },
+  //输入年龄
+  mobileInput:function(e){
+      this.setData({  
+         'newAdvice.mobile' : e.detail.value
+      })
+  },
+  //输入处方号
+  codeInput:function(e){
+      this.setData({  
+         'newAdvice.code' : e.detail.value
+      })
+  },
+   //输入处方号
+  sketchInput:function(e){
+      this.setData({  
+         'newAdvice.sketch' : e.detail.value
+      })
+  },
+   //输入处方号
+  detailsInput:function(e){
+      this.setData({  
+         'newAdvice.details' : e.detail.value
+      })
   },
   //输入内容时
   searchActiveChangeinput : function(e){

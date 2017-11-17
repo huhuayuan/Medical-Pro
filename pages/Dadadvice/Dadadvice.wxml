@@ -36,7 +36,7 @@
 </view>
 
   <block wx:for="{{searchResult}}" wx:for-item="item" wx:key="id">
-    <navigator url="info?teamId={{item.team_id}}">
+    <navigator url="../Dpatient/Dpatient?teamId={{item.team_id}}">
       <view class='patient'>
           <view class='patientImg'>
               <image src="{{item.image}}"></image>
@@ -62,7 +62,7 @@
       <view class='basic'>
         <view class='inputGroup'>
           <text>姓名</text>
-          <input type="text" name='name' placeholder="请输入姓名"/>
+          <input type="text" name='name' placeholder="请输入姓名" value='{{newAdvice.name}}' bindinput="nameInput"/>
           <image src="../../images/case.png"></image>
         </view>
         <view class='inputGroup'>
@@ -73,27 +73,27 @@
         </view>
         <view class='inputGroup'>
           <text>年龄</text>
-          <input type="number" name='age' placeholder="请输入年龄"/>
+          <input type="number" name='age' placeholder="请输入年龄" value='{{newAdvice.age}}' bindinput="ageInput"/>
         </view>
         <view class='inputGroup'>
           <text>手机号</text>
-          <input type="number" name='moblie' placeholder="请输入手机号"/>
+          <input type="number" name='moblie' placeholder="请输入手机号" value='{{newAdvice.mobile}}' bindinput="mobileInput"/>
         </view>
       </view>
 
       <view class='medicineBill'>
         <view class='inputGroup'>
           <text class='mark'>处方号</text>
-          <input name='prescriptionNumber' placeholder=""/>
+          <input name='prescriptionCode' placeholder="" value='{{newAdvice.code}}' bindinput="codeInput"/>
           <image src="../../images/case.png"></image>
         </view>
         <view class='inputGroup'>
           <text class='mark-s'>简述</text>
-          <input name='brief' placeholder=""/>
+          <input name='brief' placeholder="" value='{{newAdvice.sketch}}' bindinput="sketchInput"/>
         </view>
         <view class='inputGroup'>
           <text class='mark'>详情</text>
-          <input name='particulars' placeholder=""/>
+          <input name='particulars' placeholder="" value='{{newAdvice.details}}' bindinput="detailsInput"/>
         </view>
         <view class='inputGroup'>
           <text class='mark-c'>处方</text>
