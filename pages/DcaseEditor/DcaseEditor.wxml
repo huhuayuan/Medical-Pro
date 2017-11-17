@@ -1,0 +1,28 @@
+<!--pages/DcaseEditor/DcaseEditor.wxml-->
+<view class='editor'>
+    <view class='textGroup'>
+        <text class='icon iconC'>处方号</text>
+        <view class='content'>{{cf_orderNo}}</view>
+    </view>
+    <view class='textGroup'>
+        <text class='icon iconS'>简述</text>
+        <view class='content'>
+            <input type="text" name='sketch' value='{{patient.sketch}}' placeholder="输入简述病情"/>
+        </view>
+    </view>
+    <view class='textGroup'>
+        <text class='icon iconC'>详情</text>
+        <view class='content'>
+            <input type="text" name='details' value='{{patient.details}}' placeholder="输入详细说明"/>
+        </view>
+    </view>
+    <view class='textGroup'>
+        <text class='icon iconP'>处方</text>
+        <view class='content caseStyle'>
+            <view class='default'>选择药品</view>
+            <view wx:for='{{patient.prescription}}' wx:key='code' class='select'>{{item.yp_code}}</view>
+        </view>
+    </view>
+
+    <button type="default" class='submit'>保存</button>
+</view>

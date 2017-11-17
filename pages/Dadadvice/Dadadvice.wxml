@@ -36,7 +36,7 @@
 </view>
 
   <block wx:for="{{searchResult}}" wx:for-item="item" wx:key="id">
-    <navigator url="info?teamId={{item.team_id}}">
+    <navigator url="../Dpatient/Dpatient?teamId={{item.team_id}}">
       <view class='patient'>
           <view class='patientImg'>
               <image src="{{item.image}}"></image>

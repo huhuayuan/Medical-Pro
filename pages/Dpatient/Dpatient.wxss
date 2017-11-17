@@ -1,0 +1,150 @@
+/* pages/Dpatient/Dpatient.wxss */
+
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;  
+  box-shadow: 0 4rpx 6rpx 2rpx rgba(0,0,0,.1);
+  margin-bottom: 24rpx;
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  font-size: 28rpx;
+  padding: 20rpx 0;
+}
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  width: 200rpx;
+  bottom: 0;  
+  left: 50%;  
+  margin-left:-100rpx; 
+  right: 0;  
+  height: 8rpx;  
+  background: #40c0e3;  
+}  
+.context {
+    color: #101010;
+    font-size: 28rpx;
+}
+/**/
+.patient {
+    background: #fff;
+    border-bottom: 2rpx solid #d2d2d2;
+    box-sizing: border-box;
+    padding:40rpx;
+    display: flex; 
+}
+.patientImg {
+    width: 20%;
+    height: 90rpx;
+    border-radius: 54rpx;
+}
+.patientImg image {
+    width: 90rpx;
+    height: 90rpx;
+    text-align: center;
+    border-radius: 54rpx;
+}
+.patientInfo {
+    width: 80%;
+    display: flex;  
+    flex-direction: column;  
+    position: relative;
+}
+.pName {
+    font-size: 28rpx;
+    color:#101010;
+    font-weight: bold;
+    margin-bottom: 10rpx;
+}
+.pSex {
+    font-size: 22rpx;
+    color: #888;
+    line-height: 50rpx;
+}
+.pAge {
+    position: absolute;
+    top: 30rpx;
+    right: 10rpx;
+    color: #b2b2b2;
+    font-size: 22rpx;
+}
+/**/
+.infoGroup {
+    padding-top: 10rpx;
+    background: #fff;
+    margin-top: 20rpx;
+}
+.infoItem {
+    height: 94rpx;
+    line-height: 94rpx;
+    display: flex;
+    align-items:center;
+    color: #888;
+}
+.icon {
+    width: 40rpx;
+    height: 40rpx;
+    margin: 0 20rpx; 
+}
+.infoItem .itemIn {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: 2rpx solid #d2d2d2;
+    
+}
+.infoItem view image {
+    width: 40rpx;
+    height: 40rpx;
+    margin-right: 40rpx;
+}
+.infoItem .clearB {
+    border-bottom:none;
+}
+.talk {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+}
+/**/
+.caseBox {
+    padding: 40rpx 80rpx;
+    background: #fff;
+}
+.textGroup {
+    display: flex;
+    margin-bottom: 20rpx;
+}
+.textGroup text {
+    color: #888;
+}
+.iconS,.iconD,.iconP {
+    display: block;
+    flex: 0 0 auto;
+    height: 34rpx;
+    padding: 2rpx 14rpx;
+    border-radius: 10rpx;
+    font-weight: bold;
+    margin-right: 30rpx;
+    font-size: 24rpx;
+}
+.textGroup .iconS {
+    background: #66cde9;
+    color: #fff;
+    border: 2rpx solid #66cde9;
+}
+.textGroup .iconD  {
+    color: #66cde9;
+    border: 2rpx solid #66cde9;
+}
+.textGroup .iconP {
+    background: #a0d6d6;
+    color: #fff;
+    border: 2rpx solid #a0d6d6;
+}
