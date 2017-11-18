@@ -1,3 +1,4 @@
+<import src="../templates/templates.wxml" />
 <view class="list-tmp">
   <view class="swipper-tab">
     <view wx:for="{{expandTabs}}" wx:key="{{index}}" class="swiper-tab-list {{currentIdx == index ? 'on' : ''}}" bindtap="swichTab" id="{{index}}">
@@ -17,27 +18,8 @@
       <scroll-view scroll-y="true" style='height:{{ phoneInfo.screenHeight-186}}px'>
         <!-- 医生列表 -->
         <view class="doctorLists">
-          <block wx:for="{{doctorLists}}" wx:for-item="item" wx:key="id" wx:for-index="doctor_id">
-            <navigator url="../GdoctorDetail/GdoctorDetail?doctorId={{doctor_id}}">
-              <view class="doctorList">
-                <view class="doctorListInfo">
-                  <view class="doctorImg">
-                    <image class='avatar' src='{{item.image}}'></image>
-                  </view>
-                  <view class="doctorDesc">
-                    <text class="Dname">{{item.name}}</text>
-                    <text class='Dhospital'>医院：{{item.hospital}}</text>
-                    <text class='Ddepartment'>科室：{{item.department}}</text>
-                    <view>
-                      <text class='Dnum Dbadge'>医生码</text> {{item.num}}
-                    </view>
-                  </view>
-                  <view class="doctorAge">
-                    <text class="Dage">{{item.age}}</text>
-                  </view>
-                </view>
-              </view>
-            </navigator>
+          <block wx:for="{{doctorLists}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+            <template is="doctorList" data="{{item}}" />
           </block>
         </view>
         <!-- 医生列表结束 -->

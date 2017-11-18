@@ -1,3 +1,4 @@
+@import '../templates/templates.wxss';
 page {
   background-color: #fff;
 }
@@ -58,42 +59,6 @@ swiper {
 .doctorList {
   padding: 30rpx 0;
   border-bottom: 1px solid #e1e2e3;
-}
-.doctorListInfo {
-  color: #888888;
-  display: flex;
-  font-size: 22rpx;
-}
-.doctorImg {
-  padding-right: 40rpx;
-}
-.doctorImg image {
-  width: 90rpx;
-  height: 90rpx;
-  border: 1px solid #e1e2e3;
-  border-radius: 50%;
-}
-.doctorDesc {
-  flex: auto;
-  display: flex;
-  flex-direction: column;
-  line-height:38rpx;
-}
-.Dname {
-  font-size: 28rpx;
-  color: #101010;
-  padding-bottom: 4rpx;
-}
-.Dbadge {
-  background: #40c0e3;
-  border-radius: 4px;
-  padding: 6rpx;
-  color: #fff;
-  font-size:20rpx;
-  margin-right:10rpx;
-}
-.doctorAge {
-  margin-top: 30rpx;
 }
 
 .context {

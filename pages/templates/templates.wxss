@@ -1,0 +1,36 @@
+.doctorListInfo {
+  padding: 30rpx 0;
+  border-bottom: 1px solid #e1e2e3;
+  display: flex;
+  color: #888;
+  font-size: 22rpx;
+}
+.avatar {
+  width:90rpx;
+  height:90rpx;
+  border:1px solid #e1e2e3;
+  border-radius:50%;
+  margin-right:40rpx;
+}
+.doctorDesc {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 38rpx;
+}
+.Dname {
+  font-size:28rpx;
+  color:#101010;
+  padding-bottom:4rpx;
+}
+.Dbadge {
+  background:#40c0e3;
+  border-radius:4px;
+  padding:6rpx;
+  color:#fff;
+  font-size:20rpx;
+  margin-right:10rpx;
+}
+.Dage {
+  margin-top:30rpx;
+}

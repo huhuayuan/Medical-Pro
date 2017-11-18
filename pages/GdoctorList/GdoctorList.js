@@ -10,6 +10,7 @@ Page({
       sexTab : null,
       doctorLists: [
         {
+          doctor_id: 0,
           name:'张某某',
           hospital:'北京协议医院',
           department:'内科',
@@ -18,6 +19,16 @@ Page({
           image: '../../images/doctor.png',
           age: 36
         },{
+          doctor_id: 1,
+          name:'李某某',
+          hospital:'北京协议医院',
+          department:'内科',
+          time:'2017年6月6日',
+          num:'001568',
+          image: '../../images/doctor.png',
+          age: 36
+        },{
+          doctor_id: 2,
           name:'张某某',
           hospital:'北京协议医院',
           department:'内科',
@@ -26,6 +37,7 @@ Page({
           image: '../../images/doctor.png',
           age: 36
         },{
+          doctor_id: 3,
           name:'张某某',
           hospital:'北京协议医院',
           department:'内科',
@@ -34,14 +46,7 @@ Page({
           image: '../../images/doctor.png',
           age: 36
         },{
-          name:'张某某',
-          hospital:'北京协议医院',
-          department:'内科',
-          time:'2017年6月6日',
-          num:'001568',
-          image: '../../images/doctor.png',
-          age: 36
-        },{
+          doctor_id: 4,
           name:'张某某',
           hospital:'北京协议医院',
           department:'内科',
@@ -52,6 +57,13 @@ Page({
         }
       ],
       phoneInfo: app.globalData.phoneInfo,
+  },
+  doctordetail: function(e){
+    var doctorId = e.currentTarget.dataset.doctorId;
+    //打开详情页
+    wx.navigateTo({
+        url: '../GdoctorDetail/GdoctorDetail?doctorId=' + doctorId,
+    })
   },
   sexTap: function(e){
     this.setData({

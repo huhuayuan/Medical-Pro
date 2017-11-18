@@ -23,6 +23,7 @@
     "pages/GPersonInfo/GPersonInfo",
     "pages/GprofitDetail/GprofitDetail",
     "pages/GmyMedicine/GmyMedicine",
+    "pages/templates/templates",
     "pages/logs/logs"
   ],
   "window":{
