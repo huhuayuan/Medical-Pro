@@ -23,6 +23,9 @@
     "pages/GPersonInfo/GPersonInfo",
     "pages/GprofitDetail/GprofitDetail",
     "pages/GmyMedicine/GmyMedicine",
+    "pages/PmyOrder/PmyOrder",
+    "pages/Pself/Pself",
+    "pages/PmyIntegral/PmyIntegral",
     "pages/templates/templates",
     "pages/logs/logs"
   ],
@@ -45,6 +48,24 @@
         },
         {
             "pagePath": "pages/Gself/Gself",
+            "text": "我的",
+            "iconPath": "images/self.png",
+            "selectedIconPath": "images/self-selected.png"
+        },
+        {
+            "pagePath": "pages/GdoctorList/GdoctorList",
+            "text": "OTC药品",
+            "iconPath": "images/otc.png",
+            "selectedIconPath": "images/otc-selected.png"
+        },
+        {
+            "pagePath": "pages/Gself/Gself",
+            "text": "处方管理",
+            "iconPath": "images/case.png",
+            "selectedIconPath": "images/case-selected.png"
+        },
+        {
+            "pagePath": "pages/Pself/Pself",
             "text": "我的",
             "iconPath": "images/self.png",
             "selectedIconPath": "images/self-selected.png"

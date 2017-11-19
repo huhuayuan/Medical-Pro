@@ -1,0 +1,26 @@
+<view class="orderLists">
+  <view class="orderList" wx:for="{{myInfo.orderLists}}" wx:for-item="item" wx:key="id" wx:for-index="order_id">
+    <view class="orderTitle borderB">
+      <view class="orderName">
+        <text>{{item.name}}</text>
+        <image class='arrow' src='../../images/arrow.png'></image>
+      </view>
+      <text class="status {{item.status === '未取药' ?'text-danger' : ''}}">{{item.status}}</text>
+    </view>
+    <view class="orderContent borderB">
+      <view class='orderImg' >
+        <image src='../../images/arrow.png'></image>
+        <image src='../../images/arrow.png'></image>
+      </view>
+      <view class='orderDesc'>
+        <text class="price text-danger">￥30</text>
+        <text>在线支付</text>
+        <text>共{{item.num}}件</text>
+      </view>
+    </view>
+    <view class="orderFooter">
+      <text class="orderTime">{{item.time}}</text>
+      <text class="text-danger">取药码</text>
+    </view>
+  </view>
+</view>

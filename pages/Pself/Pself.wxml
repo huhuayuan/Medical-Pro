@@ -1,0 +1,55 @@
+<view class="selfPanel">
+  <navigator url="../GPersonInfo/GPersonInfo">
+    <view class="selfInfo Spanel">
+      <view class="selfAvatar">
+        <image class='avatar' src='{{myInfo.image}}'></image>
+      </view>
+      <view class="selfName">
+        <text class="Sname">{{myInfo.name}}</text>
+        <text>{{myInfo.sex}}</text>
+      </view>
+      <image class='arrow' src='../../images/arrow.png'></image>
+    </view>
+  </navigator>
+  <view class="selfMessage">
+    <navigator url="../GPersonInfo/GPersonInfo">
+      <view class="selfItem borderB">
+        <text class="selfDesc">个人信息</text>
+        <image class='arrow' src='../../images/arrow.png'></image>
+      </view>
+    </navigator>
+    <navigator url="../GmyProfit/GmyProfit">
+      <view class="selfItem borderB">
+        <text class="selfDesc">我的收益</text>
+        <text style="padding-right: 20rpx">100</text>
+        <image class='arrow' src='../../images/arrow.png'></image>
+      </view>
+    </navigator>
+    <navigator url="../PmyIntegral/PmyIntegral">
+      <view class="selfItem borderB">
+        <text class="selfDesc">我的积分</text>
+        <text style="padding-right: 20rpx">100</text>
+        <image class='arrow' src='../../images/arrow.png'></image>
+      </view>
+    </navigator>
+    <navigator url="../PmyOrder/PmyOrder">
+      <view class="selfItem">
+        <text class="selfDesc">我的订单</text>
+        <text style="padding-right: 20rpx">2</text>
+        <image class='arrow' src='../../images/arrow.png'></image>
+      </view>
+    </navigator>
+  </view>
+  <view class="setting">
+    <view class="selfItem borderB" bindtap="openMap">
+      <text class="selfDesc">附近药柜</text>
+      <image class='arrow' src='../../images/arrow.png'></image>
+    </view>
+    <navigator url="../Gsetting/Gsetting">
+      <view class="selfItem">
+        <text class="selfDesc">设置</text>
+        <image class='arrow' src='../../images/arrow.png'></image>
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,64 @@
+.orderLists {
+  font-size: 24rpx;
+  color: #888;
+}
+.orderList {
+  background: #fff;
+  margin-bottom: 20rpx;
+}
+.arrow {
+  width:24rpx;
+  height:24rpx;
+  color: #d2d2d2;
+  padding-left: 20rpx;
+}
+.orderImg image {
+  width: 120rpx;
+  height: 100rpx;
+  background: #ccc;
+  margin-right: 10rpx;
+}
+.text-danger {
+  color: #e51c23;
+}
+.text-success {
+  color: #09bb07;
+}
+.orderTitle {
+  display: flex;
+  padding: 0 20rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+}
+.orderName {
+  font-size: 26rpx;
+  color: #353535;
+  flex: auto;
+}
+.borderB {
+  border-bottom: 1px solid #e1e2e3;
+}
+.orderContent {
+  display: flex;
+  padding: 20rpx;
+  align-items: center;
+}
+.orderImg {
+  flex: auto;
+}
+.orderDesc {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.orderFooter {
+  padding: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.orderTime {
+  flex: auto;
+}
+.price {
+  font-size: 30rpx;
+}
