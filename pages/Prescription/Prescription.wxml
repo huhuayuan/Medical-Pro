@@ -1,0 +1,73 @@
+<import src="../templates/templates.wxml" />
+<view class="navbar borderB">
+  <block wx:for-items="{{tabs}}" wx:key="{{index}}">
+    <text id="{{index}}" class="{{activeIndex == index ? 'active' : ''}}" bindtap="tabClick">{{item}}</text>
+  </block>
+</view>
+<view class="tabPanel">
+  <view class="{{activeIndex == '0' ? 'show' : 'hide'}}">
+    <block wx:for="{{myInfo.prescriptions}}" wx:key="{{index}}">
+      <view class="panel">
+        <view class="panel-time">{{item.time}}</view>
+        <view class="panel-content">
+          <view class="num">
+            <text class="badge badge-primary p-r-sm">处方码</text>
+            <text>{{item.num}}</text>
+            <text class="code">查看取药码</text>
+          </view>
+          <view class="desc">
+            <view class="info">
+              <view>
+                <text class="badge p-r-sm">简述</text>{{item.desc}}
+              </view>
+              <view>
+                <text class="badge badge-primary p-r-sm">详情</text>{{item.detail}}
+              </view>
+              <view>
+                <text class="badge badge-info p-r-sm">处方</text>{{item.info}}
+              </view>
+            </view>
+            <text class="status">{{item.status}}</text>
+            <view class="badge-danger" hidden="{{item.status === '已取药'}}"></view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="{{activeIndex == '1' ? 'show' : 'hide'}}">
+    <block wx:for="{{myInfo.prescriptions}}" wx:key="{{index}}">
+      <view class="panel">
+        <view class="panel-time">{{item.time}}</view>
+        <view class="panel-content">
+          <view class="num">
+            <text class="badge badge-primary p-r-sm">处方码</text>
+            <text>{{item.num}}</text>
+            <text class="code">查看取药码</text>
+          </view>
+          <view class="desc">
+            <view class="info">
+              <view>
+                <text class="badge p-r-sm">简述</text>{{item.desc}}
+              </view>
+              <view>
+                <text class="badge badge-primary p-r-sm">详情</text>{{item.detail}}
+              </view>
+              <view>
+                <text class="badge badge-info p-r-sm">处方</text>{{item.info}}
+              </view>
+            </view>
+            <text class="status">{{item.status}}</text>
+            <view class="badge-danger" hidden="{{item.status === '已取药'}}"></view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="{{activeIndex == '2' ? 'show' : 'hide'}}">
+    <view class="doctorLists">
+      <block wx:for="{{doctorLists}}" wx:for-item="item" wx:for-index="index" wx:key="{{index}}">
+        <template is="doctorList" data="{{item}}" />
+      </block>
+    </view>
+  </view>
+</view>

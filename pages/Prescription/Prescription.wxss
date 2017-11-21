@@ -1,0 +1,107 @@
+@import '../templates/templates.wxss';
+.panel {
+  font-size: 24rpx;
+  color: #888;
+  line-height: 48rpx;
+}
+.panel-time {
+  padding: 0 20rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: center;
+}
+.panel-content {
+  background: #fff;
+  margin: 0 20rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  border: 1px solid #e1e2e3;
+  position: relative;
+}
+.num {
+  display: flex;
+  align-items: center;
+  line-height:40rpx;
+  padding-bottom:20rpx;
+}
+.code {
+  flex: auto;
+  text-align: right;
+}
+.desc {
+  display: flex;
+  align-items: center;
+}
+.info {
+  flex:auto;
+}
+.info>view{
+  display: flex;
+  line-height:40rpx;
+  padding-bottom:20rpx;
+}
+.p-r-sm {
+  padding-right: 10rpx;
+}
+.navbar {
+  font-size: 28rpx;
+  height:70rpx;
+  line-height:70rpx;
+  color: #101010;
+  text-align: center;
+  display: flex;
+  justify-content:space-around;
+  background-color: #fff;
+}
+.navbar text {
+  padding: 0 40rpx;
+}
+.active {
+    border-bottom: 3px solid #40c0e3;
+}
+/*.tabPanel view{
+  display: none;
+}*/
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.badge {
+  width:82rpx;
+  background:#40c0e3;
+  border-radius:4px;
+  padding:6rpx 12rpx;
+  color:#fff;
+  font-size:20rpx;
+  text-align:center;
+  margin-right:28rpx;
+  height:28rpx;
+  line-height:28rpx;
+}
+.badge-primary {
+  background:#fff;
+  border:1px solid #03a9f4;
+  color:#03a9f4;
+}
+.badge-info {
+  background-color:#88cccc
+}
+.status {
+  width: 100rpx;
+  text-align: right;
+}
+.badge-danger {
+  position: absolute;
+  top: -6rpx;
+  right: -4rpx;
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #e51c23;
+  border-radius: 50%;
+}
+.doctorLists {
+  padding: 0 30rpx;
+  background: #fff;
+}

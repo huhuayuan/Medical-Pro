@@ -26,6 +26,7 @@
     "pages/PmyOrder/PmyOrder",
     "pages/Pself/Pself",
     "pages/PmyIntegral/PmyIntegral",
+    "pages/Prescription/Prescription",
     "pages/templates/templates",
     "pages/logs/logs"
   ],
@@ -59,7 +60,7 @@
             "selectedIconPath": "images/otc-selected.png"
         },
         {
-            "pagePath": "pages/Gself/Gself",
+            "pagePath": "pages/Prescription/Prescription",
             "text": "处方管理",
             "iconPath": "images/case.png",
             "selectedIconPath": "images/case-selected.png"
