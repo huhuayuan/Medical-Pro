@@ -1,5 +1,7 @@
 {
   "pages":[
+    "pages/login/login",
+    "pages/register/register",
     "pages/Dadadvice/Dadadvice",
     "pages/DcaseEditor/DcaseEditor",
     "pages/Dpatient/Dpatient",

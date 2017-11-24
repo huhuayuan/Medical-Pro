@@ -14,3 +14,6 @@ page {
   background: #f4f4f4;
   font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
 }
+.borderB {
+  border-bottom: 1px solid #e1e2e3;
+}

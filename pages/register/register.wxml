@@ -1,0 +1,27 @@
+<view class="navbar borderB">
+  用户注册
+</view>
+<view class="loginPanel registerPanel">
+    <view class="phone item">
+        <text class="item-text">账号</text>
+        <input type="text"  value="{{userInfo.phoneNumber?userInfo.phoneNumber:''}}" placeholder="请输入手机号" />
+        <button class="btn-code">获取验证码</button>
+    </view>
+    <view class="code item">
+        <text class="item-text">验证码</text>
+        <input type="text" bindinput="setCode" value="" placeholder="输入手机验证码" />
+    </view>
+    <view class="password item">
+        <text class="item-text">密码</text>
+        <input type="password" bindinput="getPassword" value="" placeholder="输入密码" />
+    </view>
+    <view class="password item">
+        <text class="item-text">确认密码</text>
+        <input type="password" bindinput="getPassword" value="" placeholder="再次输入密码" />
+    </view>
+    <view id="footer" style="margin:80rpx auto;text-align:center;">
+      <button bindtap="changePassword" class="btn-lg btn-info">
+          注册
+      </button>
+    </view>
+</view>

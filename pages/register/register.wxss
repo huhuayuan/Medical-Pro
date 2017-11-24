@@ -1,0 +1,89 @@
+.navbar {
+  font-size: 28rpx;
+  color: #101010;
+  background: #fff;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.navbar text {
+  padding: 0 40rpx;
+}
+.active {
+    border-bottom: 3px solid #40c0e3;
+}
+
+
+
+.registerPanel {
+  font-size: 28rpx;
+  color: #888888;
+  background: #fff;
+  padding: 30rpx 40rpx;
+  height: 100%;
+}
+
+.loginPanel {
+  font-size: 28rpx;
+  color: #888888;
+  background: #fff;
+  padding: 30rpx 40rpx;
+  height: 100%;
+}
+.selfMessage {
+  background: #fff;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+  line-height: 80rpx;
+}
+.loginPanel .item {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+}
+.item-text {
+  width: 116rpx;
+  padding-right: 20rpx;
+  text-align: right;
+}
+.item input {
+  flex: auto;
+  border-bottom: 1px solid #e1e2e3;
+  padding-left: 10rpx;
+}
+.btn-lg {
+  height: 92rpx;
+  font-size: 36rpx;
+}
+.btn-info {
+  color: #fff;
+  background: #03a9f4;
+}
+.btn-register {
+  color: #03a9f4;
+  background: #fff;
+  border: 1px solid #03a9f4;
+}
+.btn-info:focus {
+  background: #09a3e6;
+}
+.btn-code {
+  background: #03a9f4;
+  font-size: 22rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  color: #fff;
+  padding-left: 16rpx;
+  padding-right: 16rpx;
+  position:absolute;
+  right:0;
+  bottom:30rpx;
+}
+.phone {
+  position: relative;
+}
+.phone>input {
+  padding-right:150rpx;
+}

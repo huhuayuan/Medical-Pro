@@ -1,10 +1,10 @@
 <!--pages/Dadadvice/Dadadvice.wxml-->
-<view class="navbar">  
-  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
-</view>  
-  
-<!--患者列表-->  
-<view hidden="{{currentTab!==0}}" class='context'>  
+<view class="navbar">
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+
+<!--患者列表-->
+<view hidden="{{currentTab!==0}}" class='context'>
   <view class="search_top">
     <form class="search_form" bindsubmit="searchSubmit">
       <input value="{{search.searchValue}}" placeholder="输入搜索内容" class="search_input" bindfocus="focusSearch" bindinput="searchActiveChangeinput" name="patientSearch" maxlength="20" />
@@ -54,10 +54,10 @@
     </navigator>
   </block>
 
-</view>  
-  
-<!--新建医嘱-->  
-  <view hidden="{{currentTab!==1}}" class='context'>  
+</view>
+
+<!--新建医嘱-->
+  <view hidden="{{currentTab!==1}}" class='context'>
     <form name='infromation'>
       <view class='basic'>
         <view class='inputGroup'>
@@ -88,7 +88,7 @@
           <image src="../../images/case.png"></image>
         </view>
         <view class='inputGroup'>
-          <text class='mark-s'>简述</text>
+          <text class='mark-s'>诊断信息</text>
           <input name='brief' placeholder="" value='{{newAdvice.sketch}}' bindinput="sketchInput"/>
         </view>
         <view class='inputGroup'>
@@ -103,4 +103,4 @@
         </view>
       </view>
     </form>
-  </view>  
+  </view>
