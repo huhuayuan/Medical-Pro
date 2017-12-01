@@ -1,36 +1,37 @@
 /* pages/Dadadvice/Dadadvice.wxss */
-page{  
-  display: flex;  
-  flex-direction: column;  
+@import '../tabbar/tabbar.wxss';
+page{
+  display: flex;
+  flex-direction: column;
   height: 100%;
   font-family: "Microsoft YaHei", Helvetica, Arial, sans-serif;
-}  
-.navbar{  
-  flex: none;  
-  display: flex;  
-  background: #fff;  
+}
+.navbar{
+  flex: none;
+  display: flex;
+  background: #fff;
   box-shadow: 0 4rpx 6rpx 2rpx rgba(0,0,0,.1);
   margin-bottom: 24rpx;
-}  
-.navbar .item{  
-  position: relative;  
-  flex: auto;  
-  text-align: center;  
+}
+.navbar .item{
+  position: relative;
+  flex: auto;
+  text-align: center;
   font-size: 28rpx;
   padding: 20rpx 0;
 }
-.navbar .item.active:after{  
-  content: "";  
-  display: block;  
-  position: absolute;  
+.navbar .item.active:after{
+  content: "";
+  display: block;
+  position: absolute;
   width: 200rpx;
-  bottom: 0;  
-  left: 50%;  
-  margin-left:-100rpx; 
-  right: 0;  
-  height: 8rpx;  
-  background: #40c0e3;  
-}  
+  bottom: 0;
+  left: 50%;
+  margin-left:-100rpx;
+  right: 0;
+  height: 8rpx;
+  background: #40c0e3;
+}
 .context {
     color: #101010;
     font-size: 28rpx;
@@ -160,7 +161,7 @@ button::after{
     text-align:center;
 }
 .cell {
-    display: flex; 
+    display: flex;
 }
 .p {
     padding-left:20rpx;
@@ -173,7 +174,7 @@ button::after{
     border-bottom: 2rpx solid #d2d2d2;
     box-sizing: border-box;
     padding:40rpx;
-    display: flex; 
+    display: flex;
 }
 .patientImg {
     width: 20%;
@@ -188,8 +189,8 @@ button::after{
 }
 .patientInfo {
     width: 80%;
-    display: flex;  
-    flex-direction: column;  
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 .pName {

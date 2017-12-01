@@ -1,4 +1,6 @@
 <!--pages/DpersonalCenter/DpersonalCenter.wxml-->
+<import src="../tabbar/tabbar.wxml"/>
+<template is="tabBar" data="{{tabBar}}"></template>
 <view class='personalImg'>
     <image src="{{personalInfo.image}}"></image>
     <view class='info'>

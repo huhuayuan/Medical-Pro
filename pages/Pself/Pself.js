@@ -28,6 +28,8 @@ Page({
     }
 },
   onLoad: function(options) {
+    getApp().editPatientTabBar();
+
     let that = this;
     that.data.doctorId = options.doctorId;
     getApp().getDoctorInfo({doctorId: options.doctorId}, function(data) {

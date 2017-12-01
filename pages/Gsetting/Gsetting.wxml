@@ -4,7 +4,7 @@
       <text class="selfDesc">账号密码</text>
     </view>
   </navigator>
-  <view class="selfMessage">
+  <view class="selfMessage" bindtap="logout">
     <text class="selfDesc">退出登录</text>
   </view>
 </view>

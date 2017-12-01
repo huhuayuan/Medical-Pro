@@ -1,0 +1,37 @@
+/* pages/tabbar/tabbar.wxss */
+.tabBar{
+  width: 100%;
+  background-color: #fff;
+  border-top: 1px solid #d2d2d2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #888;
+  display: flex;
+  justify-content: space-around;
+  z-index: 2;
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  padding-top: 6px;
+  padding-bottom: 2px;
+}
+.menu-item2 {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-direction: column;
+  padding-top: 8px;
+  padding-bottom: 4px;
+}
+.img {
+  width: 24px;
+  height: 24px;
+}
+.tabbar-title{
+  font-size: 24rpx;
+  line-height: 36rpx;
+}

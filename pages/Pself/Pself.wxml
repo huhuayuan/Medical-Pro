@@ -1,3 +1,6 @@
+<import src="../tabbar/tabbar.wxml"/>
+<template is="tabBar" data="{{tabBar}}"/>
+
 <view class="selfPanel">
   <navigator url="../GPersonInfo/GPersonInfo">
     <view class="selfInfo Spanel">

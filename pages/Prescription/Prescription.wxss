@@ -1,4 +1,6 @@
 @import '../templates/templates.wxss';
+@import '../tabbar/tabbar.wxss';
+
 .panel {
   font-size: 24rpx;
   color: #888;

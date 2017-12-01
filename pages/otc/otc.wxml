@@ -1,4 +1,6 @@
 <import src="../templates/templates.wxml" />
+<import src="../tabbar/tabbar.wxml"/>
+<template is="tabBar" data="{{tabBar}}"/>
 <view class="list-tmp">
   <!-- 搜索框 -->
   <view class="searchBox">

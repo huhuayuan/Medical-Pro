@@ -1,7 +1,7 @@
 // pages/Dadadvice/Dadadvice.js
 Page({
-  data: {  
-    navbar: ['患者列表', '新建医嘱'],  
+  data: {
+    navbar: ['患者列表', '新建医嘱'],
     currentTab: 1  ,
     sex : ['男','女'],
     sexTab : 0,
@@ -46,17 +46,17 @@ Page({
         image: '../../images/case.png'
       }
     ]
-  },  
-  navbarTap: function(e){  
-    this.setData({  
-      currentTab: e.currentTarget.dataset.idx  
-    })  
   },
-  sexTap: function(e){  
-    this.setData({  
-      sexTab: e.currentTarget.dataset.sex, 
+  navbarTap: function(e){
+    this.setData({
+      currentTab: e.currentTarget.dataset.idx
+    })
+  },
+  sexTap: function(e){
+    this.setData({
+      sexTab: e.currentTarget.dataset.sex,
       'newAdvice.sex' : e.currentTarget.dataset.sex
-    })  
+    })
   },
   //输入姓名
   nameInput:function(e){
@@ -66,31 +66,31 @@ Page({
   },
   //输入年龄
   ageInput:function(e){
-      this.setData({  
+      this.setData({
          'newAdvice.age' : e.detail.value
       })
   },
   //输入年龄
   mobileInput:function(e){
-      this.setData({  
+      this.setData({
          'newAdvice.mobile' : e.detail.value
       })
   },
   //输入处方号
   codeInput:function(e){
-      this.setData({  
+      this.setData({
          'newAdvice.code' : e.detail.value
       })
   },
    //输入处方号
   sketchInput:function(e){
-      this.setData({  
+      this.setData({
          'newAdvice.sketch' : e.detail.value
       })
   },
    //输入处方号
   detailsInput:function(e){
-      this.setData({  
+      this.setData({
          'newAdvice.details' : e.detail.value
       })
   },
@@ -126,7 +126,7 @@ Page({
       wx.showToast({
         title : '搜索中',
         icon : 'loading'
-      });   
+      });
       wx.request({
         url: app.globalData.API_URL + 'searchTeam',
         data: {
@@ -158,6 +158,8 @@ Page({
     }
   },
   onLoad:function(options){
+    getApp().editDoctorTabBar();
+
     wx.request({
       url: 'https://URL',
       data: {},

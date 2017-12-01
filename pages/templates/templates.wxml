@@ -13,3 +13,12 @@
       <text class="Dage">{{item.age}}</text>
     </view>
 </template>
+
+<!-- 个人中心 -->
+<!-- <template name="self">
+  <view class="selfItem borderB">
+    <text class="selfDesc">1</text>
+    <text v-if="{{myInfo.myEarnings}}" style="padding-right: 20rpx">100</text>
+    <image class='arrow' src='../../images/arrow.png'></image>
+  </view>
+</template> -->

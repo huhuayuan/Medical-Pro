@@ -28,6 +28,8 @@ Page({
     }
 },
   onLoad: function(options) {
+    getApp().editPromoterTabBar();
+
     let that = this;
     that.data.doctorId = options.doctorId;
     console.log(options);

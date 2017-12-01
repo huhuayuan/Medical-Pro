@@ -1,5 +1,5 @@
 /* pages/DpersonalCenter/DpersonalCenter.wxss */
-
+@import '../tabbar/tabbar.wxss';
 .personalImg {
     display: flex;
     padding: 40rpx 60rpx;

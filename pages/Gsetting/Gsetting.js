@@ -50,6 +50,11 @@ Page({
     wx.navigateTo({
       url: '../Gmap/Gmap'
     })
+  },
+  logout: function(){
+    wx.navigateTo({
+      url: '../login/login'
+    })
   }
 
   // openMap:function(){

@@ -1,4 +1,6 @@
 <import src="../templates/templates.wxml" />
+<import src="../tabbar/tabbar.wxml"/>
+<template is="tabBar" data="{{tabBar}}"/> 
 <view class="navbar borderB">
   <block wx:for-items="{{tabs}}" wx:key="{{index}}">
     <text id="{{index}}" class="{{activeIndex == index ? 'active' : ''}}" bindtap="tabClick">{{item}}</text>

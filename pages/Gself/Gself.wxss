@@ -1,3 +1,4 @@
+@import '../tabbar/tabbar.wxss';
 .selfPanel {
   font-size: 26rpx;
   color: #888888;

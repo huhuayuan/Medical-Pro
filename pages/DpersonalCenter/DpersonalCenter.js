@@ -11,6 +11,7 @@ Page({
     }
   },
   onLoad:function(options){
+    getApp().editDoctorTabBar();
     wx.request({
       url: 'https://URL',
       data: {},

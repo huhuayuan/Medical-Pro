@@ -58,6 +58,9 @@ Page({
       ],
       phoneInfo: app.globalData.phoneInfo,
   },
+  onLoad: function(){
+    getApp().editPromoterTabBar();
+  },
   doctordetail: function(e){
     var doctorId = e.currentTarget.dataset.doctorId;
     //打开详情页

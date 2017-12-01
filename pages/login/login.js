@@ -70,7 +70,7 @@ Page({
          duration:2000
        })
        setTimeout(function(){
-         wx.navigateTo({
+         wx.redirectTo({
              url: '../Dadadvice/Dadadvice'
          })
        },2000)
@@ -82,7 +82,7 @@ Page({
          duration:2000
        })
        setTimeout(function(){
-         wx.switchTab({
+         wx.redirectTo({
              url: '../GdoctorList/GdoctorList'
          })
        },2000)
@@ -94,7 +94,7 @@ Page({
          duration:2000
        })
        setTimeout(function(){
-         wx.switchTab({
+         wx.redirectTo({
              url: '../Prescription/Prescription'
          })
        },2000)
