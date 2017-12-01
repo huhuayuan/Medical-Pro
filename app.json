@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/login/login",
+    "pages/otc/otc",
     "pages/register/register",
     "pages/Dadadvice/Dadadvice",
     "pages/DcaseEditor/DcaseEditor",
@@ -56,7 +57,7 @@
             "selectedIconPath": "images/self-selected.png"
         },
         {
-            "pagePath": "pages/GdoctorList/GdoctorList",
+            "pagePath": "pages/otc/otc",
             "text": "OTC药品",
             "iconPath": "images/otc.png",
             "selectedIconPath": "images/otc-selected.png"

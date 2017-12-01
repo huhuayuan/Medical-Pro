@@ -6,11 +6,11 @@
 <view class="loginPanel" hidden="{{activeIndex!=0}}">
     <view class="phone item">
         <text class="item-text">账号</text>
-        <input type="text"  value="{{userInfo.phoneNumber?userInfo.phoneNumber:''}}" placeholder="请输入手机号" />
+        <input type="text" bindinput="getName"  value="{{userData.userName?userData.userName:''}}" placeholder="请输入手机号" />
     </view>
     <view class="password item">
         <text class="item-text">密码</text>
-        <input type="password" bindinput="getPassword" value="" placeholder="输入密码" />
+        <input type="password" bindinput="getPassword" value="{{userData.password?userData.password:''}}" placeholder="输入密码" />
     </view>
     <view id="footer" style="margin:80rpx auto;text-align:center;">
       <button bindtap="openLogin" class="btn-lg btn-info">
